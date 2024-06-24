@@ -1,0 +1,302 @@
+.modal_windows {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: clamp(320px, 70vw, 700px); //ancho máximo que varía entre 320px y 740px, dependiendo del ancho de la ventana gráfica (viewport) 
+    max-height: 90%;
+    min-width: 320px;
+    min-height: 280px;
+    visibility: hidden;
+    position: fixed;
+    z-index: 10;
+    overflow: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 1.5rem;
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.6);
+    border-radius: 12px;
+
+
+    .modal_window_header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1rem;
+        color: $color_light;
+        width: 100%;
+
+        .tittle {
+            font-size: medium;
+            font-weight: 900;
+            color: $color_dark;
+
+        }
+
+        .close_icon {
+            svg {}
+
+        }
+    }
+
+    .modal_window_body {
+        width: 100%;
+        .modal_windows_body_content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 1.5rem;
+            .modal_window_picture {
+                width: 200px;
+                background-color: white;
+                display: flex;
+                padding: 1rem 1rem;
+
+                img {
+                    display: flex;
+                    height: 100%;
+                    width: 100%;
+                    object-fit: fill;
+                    object-position: center;
+                }
+            }
+
+            .modal_window_content {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                gap: 1.5rem;
+                width: 60%;
+
+                .modal_window_content_text {
+                    .modal_window_content_top {
+                        display: flex;
+                        justify-content: space-between;
+                        padding-right: 1rem;
+
+                        .modal_window_content_title {
+                            .title {
+                                font-family: 'Nohemi';
+                                font-size: large;
+                                font-weight: 900;
+                                color: $body_bg;
+                            }
+
+                            .author {
+                                font-size: small;
+                                font-weight: 400;
+                                color: $color_light;
+                            }
+                        }
+                        .modal_window_content_prices {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: flex-end;
+                            .offer_amount {
+                                display: none;
+                                font-family: 'Nohemi';
+                                font-weight: 900;
+                                font-size: medium;
+                                &.opened{
+                                    display: block;
+                                }
+                            }
+                            .price {
+                                font-family: 'Nohemi';
+                                font-weight: 900;
+                                font-size: medium;
+                                &.offer_visible{
+                                    font-family: 'Roboto';
+                                    text-decoration: line-through;
+                                    font-weight: 400;
+                                    font-size: small;
+                                    color: $color_light;
+                                }
+                            }
+                            
+                        }
+
+                    }
+
+
+                    .description {
+                        max-width: 40ch;
+                        font-size: small;
+                        font-weight: 400;
+                        color: $color_light;
+                        margin-top: .5rem;
+                    }
+
+                    .offer {
+                        display: none;
+                        width: fit-content;
+                        padding: .5rem 1.5rem;
+                        margin-top: 1rem;
+                        background-color: $color_primary;
+                        border-radius: 2px;
+                        color: $color_secondary;
+                        font-weight: bold;
+                        box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.1);
+                        align-items: center;
+
+                        
+
+                        .offer_text {}
+
+                        &.opened {
+                            display: flex;
+                        }
+                    }
+
+
+                }
+
+
+                .buttons {
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    gap: .25rem;
+
+                    .button {
+                        display: flex;
+                        flex-wrap: nowrap;
+                        border: 2px solid $color_secondary;
+                        border-radius: 8px;
+                        // background-color: $color_secondary; 
+                        color: $color_secondary;
+                        padding: .5rem 1.25rem;
+                        cursor: pointer;
+
+                        &.button_add_card {
+                            transition: background-color 0.3s ease-in, color 0.3s ease;
+
+                            &.button_secondary {
+                                gap: .75rem;
+                                display: flex;
+
+                                .card_button_secondary_text {
+                                    font-weight: bold;
+                                }
+
+                                .card_button_secondary_icon {
+                                    margin-top: .1rem;
+
+                                    svg {}
+                                }
+                            }
+                        }
+
+                        &:hover.button_add_card {
+                            background-color: $color_secondary;
+                            color: white;
+
+                        }
+                    }
+
+                    .counter_buttons {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: space-between;
+                        gap: .3rem;
+                        font-size: x-small;
+
+                        .counter_buttons_plus {
+                            border: none;
+                            color: $color_light;
+                            border: 2px solid $color_light;
+                            border-radius: 4px;
+                            width: 1rem;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            cursor: pointer;
+                        }
+
+                        :hover.counter_buttons_plus {
+                            transition: 0.3s;
+                            background-color: $color_secondary;
+                            border-color: $color_secondary;
+                            color: white;
+                            scale: 1.3;
+
+                        }
+
+                        .counter_buttons_minus {
+                            border: none;
+                            color: $color_light;
+                            border: 2px solid $color_light;
+                            border-radius: 4px;
+                            width: 1rem;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            cursor: pointer;
+                        }
+
+                        :hover.counter_buttons_minus {
+                            transition: 0.3s;
+                            background-color: $color_secondary;
+                            border-color: $color_secondary;
+                            color: white;
+                            scale: .8;
+
+                        }
+                    }
+
+                    .counter {
+                        position: absolute;
+                        left: 79px;
+                        bottom: 32px;
+                        width: auto;
+                        height: auto;
+
+                        .counter_number {
+                            // display: none;
+                            border: 2px solid $color_secondary;
+                            background-color: white;
+                            border-radius: 9999px;
+                            font-weight: bold;
+                            font-size: x-small;
+                            color: $color_secondary;
+                            padding: 1.75px 5.5px;
+
+                            &.opened {
+                                display: block;
+                            }
+                        }
+                    }
+
+                    .sub_buttons {
+
+                        .button {
+                            margin-left: 1rem;
+                            border: none;
+                            color: $color_secondary;
+                            background-color: $color_primary;
+                            border-radius: 16px;
+                            padding: .6rem .75rem;
+                            display: flex;
+                            align-items: center;
+                            cursor: pointer;
+
+                            svg {}
+                        }
+
+                        .button svg:hover {
+                            scale: 1.1;
+                        }
+                    }
+                }
+
+            }
+        }
+
+    }
+
+    &.opened {
+        visibility: visible; //en vez de display block, pues es para ventana flotante 
+    }
+}

@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html class="no-js" lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="theme-color" content="#fafafa" />
+
+    <title>Papeleria Irasi</title>
+
+    <meta name="description" content="" />
+    <link rel="apple-touch-icon" href="/assets/img/icon.png" />
+    <link rel="icon" href="/assets/img/Panda-mini-jpg sin letras.jpg" />
+    <link rel="stylesheet" href="/assets/css/main.css" />
+    <link rel="stylesheet" href="/assets/css/main.css.map" />
+</head>
+
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="header_left">
+                <div class="header_logo">
+                    <img src="/assets/img/Panda-mini-jpg sin letras.jpg" alt="">
+                </div>
+                <div class="header_menu">
+                    <a href="" class="shop">Tienda</a>
+                    <a href="" class="about_us">Sobre nosotros</a>
+                    <a href="" class="contact">Contacto</a>
+                </div>
+            </div>
+
+            <div class="header_right">
+                <div class="header_user_toggle">
+                    <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-person-fill" viewBox="0 0 16 16">
+                            <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                        </svg>
+                    </div>
+                    <div class="user_menu">
+                        <div class="user_menu_item">User menu item</div>
+                        <div class="user_menu_item">User menu item</div>
+                        <div class="user_menu_item">User menu item</div>
+                        <div class="user_menu_item">User menu item</div>
+                        <div class="user_menu_item">User menu item</div>
+                    </div>
+                </div>
+                <!-- /header_fav_toggle -->
+
+                <div class="header_fav_toggle">
+                    <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 256 256">
+                            <path fill="currentColor"
+                                d="M178 28c-20.09 0-37.92 7.93-50 21.56C115.92 35.93 98.09 28 78 28a66.08 66.08 0 0 0-66 66c0 72.34 105.81 130.14 110.31 132.57a12 12 0 0 0 11.38 0C138.19 224.14 244 166.34 244 94a66.08 66.08 0 0 0-66-66Zm-5.49 142.36a328.69 328.69 0 0 1-44.51 31.8a328.69 328.69 0 0 1-44.51-31.8C61.82 151.77 36 123.42 36 94a42 42 0 0 1 42-42c17.8 0 32.7 9.4 38.89 24.54a12 12 0 0 0 22.22 0C145.3 61.4 160.2 52 178 52a42 42 0 0 1 42 42c0 29.42-25.82 57.77-47.49 76.36Z" />
+                        </svg>
+                    </div>
+                </div>
+                <!-- /header_fav_toggle -->
+
+                <div class="header_cart_toggle">
+                    <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-cart-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+                        </svg>
+                    </div>
+
+                    <div class="bubble">
+                        0
+                    </div>
+                </div>
+                <!-- /header_cart_toggle -->
+            </div>
+            <!-- /header_menu -->
+
+            <div class="drawer">
+                <div class="drawer_overlay"></div>
+                <div class="drawer_content">
+                    <div class="drawer_content_header">
+                        <div class="drawer_content_header_left">
+                            <div class="drawer_tittle">
+                                Carrito de la compra
+                            </div>
+                            <div class="cart_lenght">
+                                Productos: 0
+                            </div>
+                        </div>
+
+                        <div class="drawer_close_button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor"
+                                class="bi bi-x-lg" viewBox="0 0 16 16">
+                                <path
+                                    d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="drawer_content_body"></div>
+                    <div class="your_cart_is_empty">Tú cesta está vacía</div>
+                    <div class="drawer_total_price">
+                        <div class="drawer_total_price_text"></div>
+                        <div class="drawer_total_price_amount"></div>
+
+                    </div>
+                    <div class="checkout">
+                        <span class="checkout_button">
+                            <div class="button button_secondary">Ir a pagar</div>
+                        </span>
+                        <span class="free_delivery_bar">
+                            <div class="free_delivery_progress_bar"></div>
+                        </span>
+                        <span class="free_delivery_text">Envío gratis a partir de 70€</span>
+                    </div>
+                </div>
+                <!-- /drawer_content -->
+            </div>
+            <!-- /drawer -->
+        </header>
+        <!-- /header -->
+
+        <section class="hero">
+            <div class="hero_img">
+                <img src="/assets/img/Frame 1hero.png" alt="">
+            </div>
+        </section>
+        <!-- /hero -->
+
+        <section class="categories">
+            <h3>Categorías</h3>
+            <!-- <img src="/assets/img/categories.png" alt=""> -->
+            <section class="categories_nav">
+                <button class="category_btn" data-category="All">
+                    <div class="btn_img">
+                        <svg width="101" height="101" viewBox="0 0 101 101" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_57_17)" opacity="0.3">
+                                <path
+                                    d="M0.899902 11.4175C0.899902 10.1743 1.39376 8.98202 2.27284 8.10295C3.15192 7.22387 4.3442 6.73001 5.5874 6.73001H32.1687C39.8374 6.73001 46.6499 10.4175 50.9187 16.1113C53.1007 13.1942 55.9338 10.827 59.1922 9.19833C62.4507 7.56963 66.0445 6.72441 69.6874 6.73001H96.2187C97.4619 6.73001 98.6541 7.22387 99.5332 8.10295C100.412 8.98202 100.906 10.1743 100.906 11.4175V77.0425C100.906 78.2857 100.412 79.478 99.5332 80.3571C98.6541 81.2362 97.4619 81.73 96.2187 81.73H68.0499C66.2032 81.73 64.3745 82.0937 62.6684 82.8004C60.9622 83.5071 59.412 84.5429 58.1062 85.8488L54.2187 89.73C53.3397 90.6078 52.1483 91.1009 50.9062 91.1009C49.664 91.1009 48.4726 90.6078 47.5937 89.73L43.7062 85.8488C42.4003 84.5429 40.8501 83.5071 39.1439 82.8004C37.4378 82.0937 35.6091 81.73 33.7624 81.73H5.5874C4.3442 81.73 3.15192 81.2362 2.27284 80.3571C1.39376 79.478 0.899902 78.2857 0.899902 77.0425L0.899902 11.4175ZM46.2187 75.9425L46.2437 44.2363L46.2312 30.155C46.2278 26.4276 44.7448 22.8539 42.1079 20.2194C39.4711 17.5849 35.8961 16.105 32.1687 16.105H10.2749V72.355H33.7562C38.1651 72.3549 42.4846 73.5983 46.2187 75.9425ZM55.6187 30.1675L55.5937 75.93C59.3257 73.5931 63.6403 72.3541 68.0437 72.355H91.5249V16.105H69.6812C65.9515 16.105 62.3747 17.5866 59.7375 20.2238C57.1002 22.8611 55.6187 26.4379 55.6187 30.1675Z" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_57_17">
+                                    <rect width="100" height="100" transform="translate(0.899902 0.480011)" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+
+                    </div>
+                    <div class="btn_text">Todos</div>
+                </button>
+
+                <button class="category_btn" data-category="Libros">
+                    <div class="btn_img">
+                        <svg width="101" height="101" viewBox="0 0 101 101" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_57_17)" opacity="0.3">
+                                <path
+                                    d="M0.899902 11.4175C0.899902 10.1743 1.39376 8.98202 2.27284 8.10295C3.15192 7.22387 4.3442 6.73001 5.5874 6.73001H32.1687C39.8374 6.73001 46.6499 10.4175 50.9187 16.1113C53.1007 13.1942 55.9338 10.827 59.1922 9.19833C62.4507 7.56963 66.0445 6.72441 69.6874 6.73001H96.2187C97.4619 6.73001 98.6541 7.22387 99.5332 8.10295C100.412 8.98202 100.906 10.1743 100.906 11.4175V77.0425C100.906 78.2857 100.412 79.478 99.5332 80.3571C98.6541 81.2362 97.4619 81.73 96.2187 81.73H68.0499C66.2032 81.73 64.3745 82.0937 62.6684 82.8004C60.9622 83.5071 59.412 84.5429 58.1062 85.8488L54.2187 89.73C53.3397 90.6078 52.1483 91.1009 50.9062 91.1009C49.664 91.1009 48.4726 90.6078 47.5937 89.73L43.7062 85.8488C42.4003 84.5429 40.8501 83.5071 39.1439 82.8004C37.4378 82.0937 35.6091 81.73 33.7624 81.73H5.5874C4.3442 81.73 3.15192 81.2362 2.27284 80.3571C1.39376 79.478 0.899902 78.2857 0.899902 77.0425L0.899902 11.4175ZM46.2187 75.9425L46.2437 44.2363L46.2312 30.155C46.2278 26.4276 44.7448 22.8539 42.1079 20.2194C39.4711 17.5849 35.8961 16.105 32.1687 16.105H10.2749V72.355H33.7562C38.1651 72.3549 42.4846 73.5983 46.2187 75.9425ZM55.6187 30.1675L55.5937 75.93C59.3257 73.5931 63.6403 72.3541 68.0437 72.355H91.5249V16.105H69.6812C65.9515 16.105 62.3747 17.5866 59.7375 20.2238C57.1002 22.8611 55.6187 26.4379 55.6187 30.1675Z" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_57_17">
+                                    <rect width="100" height="100" transform="translate(0.899902 0.480011)" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+
+                    </div>
+                    <div class="btn_text">Libros</div>
+                </button>
+
+                <button class="category_btn" data-category="Cuadernos">
+                    <div class="btn_img">
+                        <svg width="101" height="101" viewBox="0 0 101 101" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_57_17)" opacity="0.3">
+                                <path
+                                    d="M0.899902 11.4175C0.899902 10.1743 1.39376 8.98202 2.27284 8.10295C3.15192 7.22387 4.3442 6.73001 5.5874 6.73001H32.1687C39.8374 6.73001 46.6499 10.4175 50.9187 16.1113C53.1007 13.1942 55.9338 10.827 59.1922 9.19833C62.4507 7.56963 66.0445 6.72441 69.6874 6.73001H96.2187C97.4619 6.73001 98.6541 7.22387 99.5332 8.10295C100.412 8.98202 100.906 10.1743 100.906 11.4175V77.0425C100.906 78.2857 100.412 79.478 99.5332 80.3571C98.6541 81.2362 97.4619 81.73 96.2187 81.73H68.0499C66.2032 81.73 64.3745 82.0937 62.6684 82.8004C60.9622 83.5071 59.412 84.5429 58.1062 85.8488L54.2187 89.73C53.3397 90.6078 52.1483 91.1009 50.9062 91.1009C49.664 91.1009 48.4726 90.6078 47.5937 89.73L43.7062 85.8488C42.4003 84.5429 40.8501 83.5071 39.1439 82.8004C37.4378 82.0937 35.6091 81.73 33.7624 81.73H5.5874C4.3442 81.73 3.15192 81.2362 2.27284 80.3571C1.39376 79.478 0.899902 78.2857 0.899902 77.0425L0.899902 11.4175ZM46.2187 75.9425L46.2437 44.2363L46.2312 30.155C46.2278 26.4276 44.7448 22.8539 42.1079 20.2194C39.4711 17.5849 35.8961 16.105 32.1687 16.105H10.2749V72.355H33.7562C38.1651 72.3549 42.4846 73.5983 46.2187 75.9425ZM55.6187 30.1675L55.5937 75.93C59.3257 73.5931 63.6403 72.3541 68.0437 72.355H91.5249V16.105H69.6812C65.9515 16.105 62.3747 17.5866 59.7375 20.2238C57.1002 22.8611 55.6187 26.4379 55.6187 30.1675Z" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_57_17">
+                                    <rect width="100" height="100" transform="translate(0.899902 0.480011)" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+
+                    </div>
+                    <div class="btn_text">Cuadernos</div>
+                </button>
+
+                <button class="category_btn" data-category="Lápices">
+                    <div class="btn_img">
+                        <svg width="101" height="101" viewBox="0 0 101 101" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_57_17)" opacity="0.3">
+                                <path
+                                    d="M0.899902 11.4175C0.899902 10.1743 1.39376 8.98202 2.27284 8.10295C3.15192 7.22387 4.3442 6.73001 5.5874 6.73001H32.1687C39.8374 6.73001 46.6499 10.4175 50.9187 16.1113C53.1007 13.1942 55.9338 10.827 59.1922 9.19833C62.4507 7.56963 66.0445 6.72441 69.6874 6.73001H96.2187C97.4619 6.73001 98.6541 7.22387 99.5332 8.10295C100.412 8.98202 100.906 10.1743 100.906 11.4175V77.0425C100.906 78.2857 100.412 79.478 99.5332 80.3571C98.6541 81.2362 97.4619 81.73 96.2187 81.73H68.0499C66.2032 81.73 64.3745 82.0937 62.6684 82.8004C60.9622 83.5071 59.412 84.5429 58.1062 85.8488L54.2187 89.73C53.3397 90.6078 52.1483 91.1009 50.9062 91.1009C49.664 91.1009 48.4726 90.6078 47.5937 89.73L43.7062 85.8488C42.4003 84.5429 40.8501 83.5071 39.1439 82.8004C37.4378 82.0937 35.6091 81.73 33.7624 81.73H5.5874C4.3442 81.73 3.15192 81.2362 2.27284 80.3571C1.39376 79.478 0.899902 78.2857 0.899902 77.0425L0.899902 11.4175ZM46.2187 75.9425L46.2437 44.2363L46.2312 30.155C46.2278 26.4276 44.7448 22.8539 42.1079 20.2194C39.4711 17.5849 35.8961 16.105 32.1687 16.105H10.2749V72.355H33.7562C38.1651 72.3549 42.4846 73.5983 46.2187 75.9425ZM55.6187 30.1675L55.5937 75.93C59.3257 73.5931 63.6403 72.3541 68.0437 72.355H91.5249V16.105H69.6812C65.9515 16.105 62.3747 17.5866 59.7375 20.2238C57.1002 22.8611 55.6187 26.4379 55.6187 30.1675Z" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_57_17">
+                                    <rect width="100" height="100" transform="translate(0.899902 0.480011)" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+
+                    </div>
+                    <div class="btn_text">Lápices</div>
+                </button>
+
+                <button class="category_btn" data-category="Rotuladores">
+                    <div class="btn_img">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="109" height="109" viewBox="0 0 109 109">
+                            <g opacity="0.3">
+                                <path
+                                    d="M32.1001 45.5C31.2101 45.5 30.3401 45.7639 29.6 46.2584C28.86 46.7529 28.2832 47.4557 27.9426 48.2779C27.602 49.1002 27.5129 50.005 27.6866 50.8779C27.8602 51.7508 28.2888 52.5526 28.9181 53.182C29.5475 53.8113 30.3493 54.2399 31.2222 54.4135C32.0951 54.5872 32.9999 54.4981 33.8222 54.1575C34.6444 53.8169 35.3472 53.2401 35.8417 52.5001C36.3362 51.76 36.6001 50.89 36.6001 50C36.6001 48.8065 36.126 47.6619 35.2821 46.818C34.4382 45.9741 33.2936 45.5 32.1001 45.5ZM86.1001 27.5H81.6001V14C81.6001 12.8065 81.126 11.6619 80.2821 10.818C79.4382 9.97411 78.2936 9.5 77.1001 9.5H32.1001C30.9066 9.5 29.762 9.97411 28.9181 10.818C28.0742 11.6619 27.6001 12.8065 27.6001 14V27.5H23.1001C19.5197 27.5 16.0859 28.9223 13.5542 31.4541C11.0224 33.9858 9.6001 37.4196 9.6001 41V68C9.6001 71.5804 11.0224 75.0142 13.5542 77.5459C16.0859 80.0777 19.5197 81.5 23.1001 81.5H27.6001V95C27.6001 96.1935 28.0742 97.3381 28.9181 98.182C29.762 99.0259 30.9066 99.5 32.1001 99.5H77.1001C78.2936 99.5 79.4382 99.0259 80.2821 98.182C81.126 97.3381 81.6001 96.1935 81.6001 95V81.5H86.1001C89.6805 81.5 93.1143 80.0777 95.646 77.5459C98.1778 75.0142 99.6001 71.5804 99.6001 68V41C99.6001 37.4196 98.1778 33.9858 95.646 31.4541C93.1143 28.9223 89.6805 27.5 86.1001 27.5ZM36.6001 18.5H72.6001V27.5H36.6001V18.5ZM72.6001 90.5H36.6001V72.5H72.6001V90.5ZM90.6001 68C90.6001 69.1935 90.126 70.3381 89.2821 71.182C88.4382 72.0259 87.2936 72.5 86.1001 72.5H81.6001V68C81.6001 66.8065 81.126 65.6619 80.2821 64.818C79.4382 63.9741 78.2936 63.5 77.1001 63.5H32.1001C30.9066 63.5 29.762 63.9741 28.9181 64.818C28.0742 65.6619 27.6001 66.8065 27.6001 68V72.5H23.1001C21.9066 72.5 20.762 72.0259 19.9181 71.182C19.0742 70.3381 18.6001 69.1935 18.6001 68V41C18.6001 39.8065 19.0742 38.6619 19.9181 37.818C20.762 36.9741 21.9066 36.5 23.1001 36.5H86.1001C87.2936 36.5 88.4382 36.9741 89.2821 37.818C90.126 38.6619 90.6001 39.8065 90.6001 41V68Z" />
+                            </g>
+                        </svg>
+
+                    </div>
+                    <div class="btn_text">Rotuladores</div>
+                </button>
+
+            </section>
+        </section>
+        <!-- /categories -->
+
+        <main class="main">
+            <section class="most_read">
+                <h3>Productos</h3>
+
+                <section class="filter_bar">
+                    <div class="filter_bar_left">
+                        <span class="filter_tags">
+
+                        </span>
+                    </div>
+                    <!-- /filter_bar_left -->
+                    <div class="filter_bar_right">
+                        <ul>
+                            <li>
+                                <span class="search_icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi bi-search" viewBox="0 0 16 16">
+                                        <path
+                                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                                    </svg>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="filter_icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi bi-filter" viewBox="0 0 16 16">
+                                        <path
+                                            d="M6 10.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5m-2-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5m-2-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5" />
+                                    </svg>
+                                </span>
+                            </li>
+                        </ul>
+                        <span class="icon">
+                        </span>
+                    </div>
+                    <!-- /filter_bar_right -->
+                </section>
+
+                <div class="gallery">
+                <!-- Descomentar para ver main.js -->
+                    <!-- <div class="card" data-sale="60" data-identifier="CA00"> 
+                        <div class="card_picture">
+                            <img src="/assets/img/libro.jpg" alt="">
+                        </div>
+                        <div class="card_content">
+                            <div class="card_content_top">
+                                <div class="card_content_top_left">
+                                    <div class="card_identifier">CA00</div>
+                                    <h5 class="card_title">Libro</h5>
+                                    <h6 class="card_subtitle">Subtítulo</h6>
+                                </div>
+                                <div class="card_content_top_right">
+                                    <span class="amount">20,50</span>
+                                    <span class="currency">€</span>
+                                </div>
+                                <div class="card_description">
+                                    Fusce pulvinar ante vitae dapibus fringilla. In ut odio ligula. Quisque id ipsum
+                                    lacus. Nulla finibus ultricies velit eu ultricies. Proin quis tellus lacinia, congue
+                                    erat nec, ultrices nisl.
+                                </div>
+                            </div>
+                            <div class="card_content_button">
+                                <div class="button button_details_card button_primary">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-three-dots" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3" />
+                                    </svg>
+                                </div>
+                                <div class="button button_add_card button_secondary">
+                                    <div class="card_button_secondary_text">Añadir</div>
+                                    <div class="card_button_secondary_icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                            fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <button class="button button_primary fav_button">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26"
+                                        viewBox="0 0 256 256">
+                                        <path fill="currentColor"
+                                            d="M178 28c-20.09 0-37.92 7.93-50 21.56C115.92 35.93 98.09 28 78 28a66.08 66.08 0 0 0-66 66c0 72.34 105.81 130.14 110.31 132.57a12 12 0 0 0 11.38 0C138.19 224.14 244 166.34 244 94a66.08 66.08 0 0 0-66-66Zm-5.49 142.36a328.69 328.69 0 0 1-44.51 31.8a328.69 328.69 0 0 1-44.51-31.8C61.82 151.77 36 123.42 36 94a42 42 0 0 1 42-42c17.8 0 32.7 9.4 38.89 24.54a12 12 0 0 0 22.22 0C145.3 61.4 160.2 52 178 52a42 42 0 0 1 42 42c0 29.42-25.82 57.77-47.49 76.36Z" />
+                                    </svg>
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+                    /card
+
+                    <div class="card" data-sale="0" data-identifier="CA05">
+                        <div class="card_picture">
+                            <img src="/assets/img/cauderno.jpg" alt="">
+                        </div>
+                        <div class="card_content">
+                            <div class="card_content_top">
+                                <div class="card_content_top_left">
+                                    <div class="card_identifier">CA05</div>
+                                    <h5 class="card_title">Cuaderno</h5>
+                                    <h6 class="card_subtitle">Subtítulo</h6>
+                                </div>
+                                <div class="card_content_top_right">
+                                    <span class="amount">7,50</span>
+                                    <span class="currency">€</span>
+                                </div>
+                                <div class="card_description">
+                                    Fusce pulvinar ante vitae dapibus fringilla. In ut odio ligula. Quisque id ipsum
+                                    lacus. Nulla finibus ultricies velit eu ultricies.
+                                </div>
+                            </div>
+                            <div class="card_content_button">
+                                <div class="button button_details_card button_primary">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-three-dots" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3" />
+                                    </svg>
+                                </div>
+                                <div class="button button_add_card button_secondary">
+                                    <div class="card_button_secondary_text">Añadir</div>
+                                    <div class="card_button_secondary_icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                            fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <button class="button button_primary fav_button">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26"
+                                        viewBox="0 0 256 256">
+                                        <path fill="currentColor"
+                                            d="M178 28c-20.09 0-37.92 7.93-50 21.56C115.92 35.93 98.09 28 78 28a66.08 66.08 0 0 0-66 66c0 72.34 105.81 130.14 110.31 132.57a12 12 0 0 0 11.38 0C138.19 224.14 244 166.34 244 94a66.08 66.08 0 0 0-66-66Zm-5.49 142.36a328.69 328.69 0 0 1-44.51 31.8a328.69 328.69 0 0 1-44.51-31.8C61.82 151.77 36 123.42 36 94a42 42 0 0 1 42-42c17.8 0 32.7 9.4 38.89 24.54a12 12 0 0 0 22.22 0C145.3 61.4 160.2 52 178 52a42 42 0 0 1 42 42c0 29.42-25.82 57.77-47.49 76.36Z" />
+                                    </svg>
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+                    /card
+
+                    <div class="card" data-sale="30" data-identifier="CA10">
+                        <div class="card_picture">
+                            <img src="/assets/img/lapiz azul.webp" alt="">
+                        </div>
+                        <div class="card_content">
+                            <div class="card_content_top">
+                                <div class="card_content_top_left">
+                                    <div class="card_identifier">CA10</div>
+                                    <h5 class="card_title">Lápiz Azul</h5>
+                                    <h6 class="card_subtitle">Subtítulo</h6>
+                                </div>
+                                <div class="card_content_top_right">
+                                    <span class="amount">1,99</span>
+                                    <span class="currency">€</span>
+                                </div>
+                                <div class="card_description">
+                                    Fusce pulvinar ante vitae dapibus fringilla. In ut odio ligula. Quisque id ipsum
+                                    lacus. Nulla finibus ultricies velit eu ultricies. Proin quis tellus lacinia, congue
+                                    erat nec.
+                                </div>
+                            </div>
+                            <div class="card_content_button">
+                                <div class="button button_details_card button_primary">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-three-dots" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3" />
+                                    </svg>
+                                </div>
+                                <div class="button button_add_card button_secondary">
+                                    <div class="card_button_secondary_text">Añadir</div>
+                                    <div class="card_button_secondary_icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                            fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <button class="button button_primary fav_button">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26"
+                                        viewBox="0 0 256 256">
+                                        <path fill="currentColor"
+                                            d="M178 28c-20.09 0-37.92 7.93-50 21.56C115.92 35.93 98.09 28 78 28a66.08 66.08 0 0 0-66 66c0 72.34 105.81 130.14 110.31 132.57a12 12 0 0 0 11.38 0C138.19 224.14 244 166.34 244 94a66.08 66.08 0 0 0-66-66Zm-5.49 142.36a328.69 328.69 0 0 1-44.51 31.8a328.69 328.69 0 0 1-44.51-31.8C61.82 151.77 36 123.42 36 94a42 42 0 0 1 42-42c17.8 0 32.7 9.4 38.89 24.54a12 12 0 0 0 22.22 0C145.3 61.4 160.2 52 178 52a42 42 0 0 1 42 42c0 29.42-25.82 57.77-47.49 76.36Z" />
+                                    </svg>
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+                    /card
+
+                    <div class="card" data-sale="0" data-identifier="CA20">
+                        <div class="card_picture">
+                            <img src="/assets/img/rotulador negro.jfif" alt="">
+                        </div>
+                        <div class="card_content">
+                            <div class="card_content_top">
+                                <div class="card_content_top_left">
+                                    <div class="card_identifier">CA20</div>
+                                    <h5 class="card_title">Rotulador negro</h5>
+                                    <h6 class="card_subtitle">Subtítulo</h6>
+                                </div>
+                                <div class="card_content_top_right">
+                                    <span class="amount">3,00</span>
+                                    <span class="currency">€</span>
+                                </div>
+                                <div class="card_description">
+                                    Fusce pulvinar ante vitae dapibus fringilla. In ut odio ligula. Quisque id ipsum
+                                    lacus. Nulla finibus ultricies velit eu ultricies. Proin quis tellus lacinia, congue
+                                    erat nec, ultrices nisl. Etiam at erat tortor. Nullam quis ullamcorper neque, vel
+                                    scelerisque erat. Integer sit amet hendrerit mauris, et rutrum ipsum. Phasellus
+                                    vitae eros ante.
+                                </div>
+                            </div>
+                            <div class="card_content_button">
+                                <div class="button button_details_card button_primary">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-three-dots" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3" />
+                                    </svg>
+                                </div>
+                                <div class="button button_add_card button_secondary">
+                                    <div class="card_button_secondary_text">Añadir</div>
+                                    <div class="card_button_secondary_icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                            fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <button class="button button_primary fav_button">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26"
+                                        viewBox="0 0 256 256">
+                                        <path fill="currentColor"
+                                            d="M178 28c-20.09 0-37.92 7.93-50 21.56C115.92 35.93 98.09 28 78 28a66.08 66.08 0 0 0-66 66c0 72.34 105.81 130.14 110.31 132.57a12 12 0 0 0 11.38 0C138.19 224.14 244 166.34 244 94a66.08 66.08 0 0 0-66-66Zm-5.49 142.36a328.69 328.69 0 0 1-44.51 31.8a328.69 328.69 0 0 1-44.51-31.8C61.82 151.77 36 123.42 36 94a42 42 0 0 1 42-42c17.8 0 32.7 9.4 38.89 24.54a12 12 0 0 0 22.22 0C145.3 61.4 160.2 52 178 52a42 42 0 0 1 42 42c0 29.42-25.82 57.77-47.49 76.36Z" />
+                                    </svg>
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+                    /card
+
+                    <div class="card" data-sale="50" data-identifier="CA30">
+                        <div class="card_picture">
+                            <img src="/assets/img/cauderno.jpg" alt="">
+                        </div>
+                        <div class="card_content">
+                            <div class="card_content_top">
+                                <div class="card_content_top_left">
+                                    <div class="card_identifier">CA30</div>
+                                    <h5 class="card_title">Título</h5>
+                                    <h6 class="card_subtitle">Subtítulo</h6>
+                                </div>
+                                <div class="card_content_top_right">
+                                    <span class="amount">20,50</span>
+                                    <span class="currency">€</span>
+                                </div>
+                                <div class="card_description">
+                                    Fusce pulvinar ante vitae dapibus fringilla. In ut odio ligula. Quisque id ipsum
+                                    lacus. Nulla finibus ultricies velit eu ultricies. Proin quis tellus lacinia, congue
+                                    erat nec, ultrices nisl. Etiam at erat tortor. Nullam quis ullamcorper neque, vel
+                                    scelerisque erat. Integer sit amet hendrerit mauris, et rutrum ipsum. Phasellus
+                                    vitae eros ante.
+                                </div>
+                            </div>
+                            <div class="card_content_button">
+                                <div class="button button_details_card button_primary">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-three-dots" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3" />
+                                    </svg>
+                                </div>
+                                <div class="button button_add_card button_secondary">
+                                    <div class="card_button_secondary_text">Añadir</div>
+                                    <div class="card_button_secondary_icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                            fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <button class="button button_primary fav_button">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26"
+                                        viewBox="0 0 256 256">
+                                        <path fill="currentColor"
+                                            d="M178 28c-20.09 0-37.92 7.93-50 21.56C115.92 35.93 98.09 28 78 28a66.08 66.08 0 0 0-66 66c0 72.34 105.81 130.14 110.31 132.57a12 12 0 0 0 11.38 0C138.19 224.14 244 166.34 244 94a66.08 66.08 0 0 0-66-66Zm-5.49 142.36a328.69 328.69 0 0 1-44.51 31.8a328.69 328.69 0 0 1-44.51-31.8C61.82 151.77 36 123.42 36 94a42 42 0 0 1 42-42c17.8 0 32.7 9.4 38.89 24.54a12 12 0 0 0 22.22 0C145.3 61.4 160.2 52 178 52a42 42 0 0 1 42 42c0 29.42-25.82 57.77-47.49 76.36Z" />
+                                    </svg>
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+                    /card
+
+                    <div class="card" data-sale="0" data-identifier="CA40">
+                        <div class="card_picture">
+                            <img src="/assets/img/rotulador negro.jfif" alt="">
+                        </div>
+                        <div class="card_content">
+                            <div class="card_content_top">
+                                <div class="card_content_top_left">
+                                    <div class="card_identifier">CA40</div>
+                                    <h5 class="card_title">Título</h5>
+                                    <h6 class="card_subtitle">Subtítulo</h6>
+                                </div>
+                                <div class="card_content_top_right">
+                                    <span class="amount">20,50</span>
+                                    <span class="currency">€</span>
+                                </div>
+                                <div class="card_description">
+                                    Fusce pulvinar ante vitae dapibus fringilla. In ut odio ligula. Quisque id ipsum
+                                    lacus. Nulla finibus ultricies velit eu ultricies. Proin quis tellus lacinia, congue
+                                    erat nec, ultrices nisl. Etiam at erat tortor. Nullam quis ullamcorper neque, vel
+                                    scelerisque erat. Integer sit amet hendrerit mauris, et rutrum ipsum. Phasellus
+                                    vitae eros ante.
+                                </div>
+                            </div>
+                            <div class="card_content_button">
+                                <div class="button button_details_card button_primary">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-three-dots" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3" />
+                                    </svg>
+                                </div>
+                                <div class="button button_add_card button_secondary">
+                                    <div class="card_button_secondary_text">Añadir</div>
+                                    <div class="card_button_secondary_icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                            fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <button class="button button_primary fav_button">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26"
+                                        viewBox="0 0 256 256">
+                                        <path fill="currentColor"
+                                            d="M178 28c-20.09 0-37.92 7.93-50 21.56C115.92 35.93 98.09 28 78 28a66.08 66.08 0 0 0-66 66c0 72.34 105.81 130.14 110.31 132.57a12 12 0 0 0 11.38 0C138.19 224.14 244 166.34 244 94a66.08 66.08 0 0 0-66-66Zm-5.49 142.36a328.69 328.69 0 0 1-44.51 31.8a328.69 328.69 0 0 1-44.51-31.8C61.82 151.77 36 123.42 36 94a42 42 0 0 1 42-42c17.8 0 32.7 9.4 38.89 24.54a12 12 0 0 0 22.22 0C145.3 61.4 160.2 52 178 52a42 42 0 0 1 42 42c0 29.42-25.82 57.77-47.49 76.36Z" />
+                                    </svg>
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+                    /card
+
+                    <div class="card" data-sale="30" data-identifier="CA50">
+                        <div class="card_picture">
+                            <img src="" alt="">
+                        </div>
+                        <div class="card_content">
+                            <div class="card_content_top">
+                                <div class="card_content_top_left">
+                                    <div class="card_identifier">CA50</div>
+                                    <h5 class="card_title">Título</h5>
+                                    <h6 class="card_subtitle">Subtítulo</h6>
+                                </div>
+                                <div class="card_content_top_right">
+                                    <span class="amount">20,50</span>
+                                    <span class="currency">€</span>
+                                </div>
+                                <div class="card_description">
+                                    Fusce pulvinar ante vitae dapibus fringilla. In ut odio ligula. Quisque id ipsum
+                                    lacus. Nulla finibus ultricies velit eu ultricies. Proin quis tellus lacinia, congue
+                                    erat nec, ultrices nisl. Etiam at erat tortor. Nullam quis ullamcorper neque, vel
+                                    scelerisque erat. Integer sit amet hendrerit mauris, et rutrum ipsum. Phasellus
+                                    vitae eros ante.
+                                </div>
+                            </div>
+                            <div class="card_content_button">
+                                <div class="button button_details_card button_primary">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-three-dots" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3" />
+                                    </svg>
+                                </div>
+                                <div class="button button_add_card button_secondary">
+                                    <div class="card_button_secondary_text">Añadir</div>
+                                    <div class="card_button_secondary_icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                            fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <button class="button button_primary fav_button fav_button">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 256 256">
+                                        <path fill="currentColor"
+                                            d="M178 28c-20.09 0-37.92 7.93-50 21.56C115.92 35.93 98.09 28 78 28a66.08 66.08 0 0 0-66 66c0 72.34 105.81 130.14 110.31 132.57a12 12 0 0 0 11.38 0C138.19 224.14 244 166.34 244 94a66.08 66.08 0 0 0-66-66Zm-5.49 142.36a328.69 328.69 0 0 1-44.51 31.8a328.69 328.69 0 0 1-44.51-31.8C61.82 151.77 36 123.42 36 94a42 42 0 0 1 42-42c17.8 0 32.7 9.4 38.89 24.54a12 12 0 0 0 22.22 0C145.3 61.4 160.2 52 178 52a42 42 0 0 1 42 42c0 29.42-25.82 57.77-47.49 76.36Z" />
+                                    </svg>
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+                    /card
+
+                    <div class="card" data-sale="50" data-identifier="CA60">
+                        <div class="card_picture">
+                            <img src="/assets/img/libro.jpg" alt="">
+                        </div>
+                        <div class="card_content">
+                            <div class="card_content_top">
+                                <div class="card_content_top_left">
+                                    <div class="card_identifier">CA60</div>
+                                    <h5 class="card_title">Título</h5>
+                                    <h6 class="card_subtitle">Subtítulo</h6>
+                                </div>
+                                <div class="card_content_top_right">
+                                    <span class="amount">20,50</span>
+                                    <span class="currency">€</span>
+                                </div>
+                                <div class="card_description">
+                                    Fusce pulvinar ante vitae dapibus fringilla. In ut odio ligula. Quisque id ipsum
+                                    lacus. Nulla finibus ultricies velit eu ultricies. Proin quis tellus lacinia, congue
+                                    erat nec, ultrices nisl. Etiam at erat tortor. Nullam quis ullamcorper neque, vel
+                                    scelerisque erat. Integer sit amet hendrerit mauris, et rutrum ipsum. Phasellus
+                                    vitae eros ante.
+                                </div>
+                            </div>
+                            <div class="card_content_button">
+                                <div class="button button_details_card button_primary">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-three-dots" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3" />
+                                    </svg>
+                                </div>
+                                <div class="button button_add_card button_secondary">
+                                    <div class="card_button_secondary_text">Añadir</div>
+                                    <div class="card_button_secondary_icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                            fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <button class="button button_primary fav_button">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26"
+                                        viewBox="0 0 256 256">
+                                        <path fill="currentColor"
+                                            d="M178 28c-20.09 0-37.92 7.93-50 21.56C115.92 35.93 98.09 28 78 28a66.08 66.08 0 0 0-66 66c0 72.34 105.81 130.14 110.31 132.57a12 12 0 0 0 11.38 0C138.19 224.14 244 166.34 244 94a66.08 66.08 0 0 0-66-66Zm-5.49 142.36a328.69 328.69 0 0 1-44.51 31.8a328.69 328.69 0 0 1-44.51-31.8C61.82 151.77 36 123.42 36 94a42 42 0 0 1 42-42c17.8 0 32.7 9.4 38.89 24.54a12 12 0 0 0 22.22 0C145.3 61.4 160.2 52 178 52a42 42 0 0 1 42 42c0 29.42-25.82 57.77-47.49 76.36Z" />
+                                    </svg>
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+                    /card
+
+                    <div class="card" data-sale="50" data-identifier="CA70">
+                        <div class="card_picture">
+                            <img src="/assets/img/rotulador negro.jfif" alt="">
+                        </div>
+                        <div class="card_content">
+                            <div class="card_content_top">
+                                <div class="card_content_top_left">
+                                    <div class="card_identifier">CA70</div>
+                                    <h5 class="card_title">Título</h5>
+                                    <h6 class="card_subtitle">Subtítulo</h6>
+                                </div>
+                                <div class="card_content_top_right">
+                                    <span class="amount">20,50</span>
+                                    <span class="currency">€</span>
+                                </div>
+                                <div class="card_description">
+                                    Fusce pulvinar ante vitae dapibus fringilla. In ut odio ligula. Quisque id ipsum
+                                    lacus. Nulla finibus ultricies velit eu ultricies. Proin quis tellus lacinia, congue
+                                    erat nec, ultrices nisl. Etiam at erat tortor. Nullam quis ullamcorper neque, vel
+                                    scelerisque erat. Integer sit amet hendrerit mauris, et rutrum ipsum. Phasellus
+                                    vitae eros ante.
+                                </div>
+                            </div>
+                            <div class="card_content_button">
+                                <div class="button button_details_card button_primary">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-three-dots" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3" />
+                                    </svg>
+                                </div>
+                                <div class="button button_add_card button_secondary">
+                                    <div class="card_button_secondary_text">Añadir</div>
+                                    <div class="card_button_secondary_icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                            fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <button class="button button_primary fav_button">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26"
+                                        viewBox="0 0 256 256">
+                                        <path fill="currentColor"
+                                            d="M178 28c-20.09 0-37.92 7.93-50 21.56C115.92 35.93 98.09 28 78 28a66.08 66.08 0 0 0-66 66c0 72.34 105.81 130.14 110.31 132.57a12 12 0 0 0 11.38 0C138.19 224.14 244 166.34 244 94a66.08 66.08 0 0 0-66-66Zm-5.49 142.36a328.69 328.69 0 0 1-44.51 31.8a328.69 328.69 0 0 1-44.51-31.8C61.82 151.77 36 123.42 36 94a42 42 0 0 1 42-42c17.8 0 32.7 9.4 38.89 24.54a12 12 0 0 0 22.22 0C145.3 61.4 160.2 52 178 52a42 42 0 0 1 42 42c0 29.42-25.82 57.77-47.49 76.36Z" />
+                                    </svg>
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+                    /card
+
+                    <div class="card" data-sale=" 0" data-identifier="CA80">
+                        <div class="card_picture">
+                            <img src="/assets/img/libro.jpg" alt="">
+                        </div>
+                        <div class="card_content">
+                            <div class="card_content_top">
+                                <div class="card_content_top_left">
+                                    <div class="card_identifier">CA80</div>
+                                    <h5 class="card_title">Título</h5>
+                                    <h6 class="card_subtitle">Subtítulo</h6>
+                                </div>
+                                <div class="card_content_top_right">
+                                    <span class="amount">20,50</span>
+                                    <span class="currency">€</span>
+                                </div>
+                                <div class="card_description">
+                                    Fusce pulvinar ante vitae dapibus fringilla. In ut odio ligula. Quisque id ipsum
+                                    lacus. Nulla finibus ultricies velit eu ultricies. Proin quis tellus lacinia, congue
+                                    erat nec, ultrices nisl. Etiam at erat tortor. Nullam quis ullamcorper neque, vel
+                                    scelerisque erat. Integer sit amet hendrerit mauris, et rutrum ipsum. Phasellus
+                                    vitae eros ante.
+                                </div>
+                            </div>
+                            <div class="card_content_button">
+                                <div class="button button_details_card button_primary">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-three-dots" viewBox="0 0 16 16">
+                                        <path
+                                            d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3" />
+                                    </svg>
+                                </div>
+                                <div class="button button_add_card button_secondary">
+                                    <div class="card_button_secondary_text">Añadir</div>
+                                    <div class="card_button_secondary_icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                            fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                                            <path
+                                                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <button class="button button_primary fav_button">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26"
+                                        viewBox="0 0 256 256">
+                                        <path fill="currentColor"
+                                            d="M178 28c-20.09 0-37.92 7.93-50 21.56C115.92 35.93 98.09 28 78 28a66.08 66.08 0 0 0-66 66c0 72.34 105.81 130.14 110.31 132.57a12 12 0 0 0 11.38 0C138.19 224.14 244 166.34 244 94a66.08 66.08 0 0 0-66-66Zm-5.49 142.36a328.69 328.69 0 0 1-44.51 31.8a328.69 328.69 0 0 1-44.51-31.8C61.82 151.77 36 123.42 36 94a42 42 0 0 1 42-42c17.8 0 32.7 9.4 38.89 24.54a12 12 0 0 0 22.22 0C145.3 61.4 160.2 52 178 52a42 42 0 0 1 42 42c0 29.42-25.82 57.77-47.49 76.36Z" />
+                                    </svg>
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+                    /card-->
+                </div>
+
+            </section>
+
+            <section class="recommendations">
+                <h3>Recomendaciones</h3>
+                <div class="slider">
+                    <div class="slider_content"></div>
+                    <div class="slider_navigation"></div>
+                </div>
+            </section>
+            <!-- /recommendations -->
+        </main>
+        <!-- /main -->
+
+        <section class="modal_windows">
+            <article class="modal_window_header">
+                <div class="tittle">Detalles del producto</div>
+                <div class="close_icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor"
+                        class="bi bi-x-lg" viewBox="0 0 16 16">
+                        <path
+                            d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
+                    </svg>
+                </div>
+            </article>
+
+            <article class="modal_window_body"></article>
+            <!-- /modal_window_body -->
+        </section>
+        <!-- /modal_windows -->
+    </div>
+
+    <!-- <script src="/app/main.js"></script> -->
+    <script src="/app/main2.js"></script>
+</body>
+
+</html>
