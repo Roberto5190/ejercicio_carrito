@@ -42,7 +42,7 @@ const order = [
         erat nec, ultrices nisl. Proin quis tellus lacinia, congue
         erat nec, ultrices nisl`,
         itemPrice: "7.50",
-        itemImg: "/assets/img/Cuaderno-kraft-A4.webp",
+        itemImg: "/assets/img/Cuaderno-kraft-A4.png",
         dataSale: 0,
         itemOfferPrice: "",
         itemTotalPrice: "9.99",
