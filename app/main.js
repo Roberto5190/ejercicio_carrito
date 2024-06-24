@@ -14,6 +14,7 @@ const ordersInCart = [
     // }
 ]
 
+
 // VARIABLES GLOBALES
 const cards = document.querySelectorAll(".card")
 const modalWindos = document.querySelector(".modal_windows")
