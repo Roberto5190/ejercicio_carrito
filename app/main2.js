@@ -11,7 +11,7 @@ const order = [
         lacus.Nulla finibus ultricies velit eu ultricies.Proin quis tellus lacinia, congue
         erat nec, ultrices nisl.`,
         itemPrice: "20.50",
-        itemImg: "../assets/img/libro.jpg",
+        itemImg: "./assets/img/libro.jpg",
         dataSale: 60,
         itemOfferPrice: "",
         itemTotalPrice: "20.50",
@@ -26,7 +26,7 @@ const order = [
         lacus.Nulla finibus ultricies velit eu ultricies.Proin quis tellus lacinia, congue
         erat nec, ultrices nisl.`,
         itemPrice: "7.50",
-        itemImg: "../assets/img/cauderno.jpg",
+        itemImg: "./assets/img/cauderno.jpg",
         dataSale: 0,
         itemOfferPrice: "",
         itemTotalPrice: "7.50",
@@ -42,7 +42,7 @@ const order = [
         erat nec, ultrices nisl. Proin quis tellus lacinia, congue
         erat nec, ultrices nisl`,
         itemPrice: "7.50",
-        itemImg: "../assets/img/Cuaderno-kraft-A4.webp",
+        itemImg: "./assets/img/Cuaderno-kraft-A4.webp",
         dataSale: 0,
         itemOfferPrice: "",
         itemTotalPrice: "9.99",
@@ -57,7 +57,7 @@ const order = [
         lacus. Nulla finibus ultricies velit eu ultricies. Proin quis tellus lacinia, congue
         erat nec.`,
         itemPrice: "1.99",
-        itemImg: "../assets/img/lapiz azul.webp",
+        itemImg: "./assets/img/lapiz azul.webp",
         dataSale: 30,
         itemOfferPrice: "",
         itemTotalPrice: "1.99",
@@ -72,7 +72,7 @@ const order = [
         lacus. Nulla finibus ultricies velit eu ultricies. Proin quis tellus lacinia, congue
         erat nec.`,
         itemPrice: "1.99",
-        itemImg: "../assets/img/lapiz azul.webp",
+        itemImg: "./assets/img/lapiz azul.webp",
         dataSale: 35,
         itemOfferPrice: "",
         itemTotalPrice: "1.99",
@@ -87,7 +87,7 @@ const order = [
         lacus. Nulla finibus ultricies velit eu ultricies. Proin quis tellus lacinia, congue
         erat nec.`,
         itemPrice: "1.99",
-        itemImg: "../assets/img/pencil.jpg",
+        itemImg: "./assets/img/pencil.jpg",
         dataSale: 60,
         itemOfferPrice: "",
         itemTotalPrice: "1.99",
@@ -104,7 +104,7 @@ const order = [
         scelerisque erat. Integer sit amet hendrerit mauris, et rutrum ipsum. Phasellus
         vitae eros ante.`,
         itemPrice: "3.00",
-        itemImg: "../assets/img/rotulador negro.jfif",
+        itemImg: "./assets/img/rotulador negro.jfif",
         dataSale: 0,
         itemOfferPrice: "",
         itemTotalPrice: "3.00",
