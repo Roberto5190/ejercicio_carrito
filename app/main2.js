@@ -42,7 +42,7 @@ const order = [
         erat nec, ultrices nisl. Proin quis tellus lacinia, congue
         erat nec, ultrices nisl`,
         itemPrice: "7.50",
-        itemImg: "assets/img/Cuaderno-kraft-A4.png",
+        itemImg: "assets/img/cuaderno-kraft-a4.png",
         dataSale: 0,
         itemOfferPrice: "",
         itemTotalPrice: "9.99",
@@ -57,7 +57,7 @@ const order = [
         lacus. Nulla finibus ultricies velit eu ultricies. Proin quis tellus lacinia, congue
         erat nec.`,
         itemPrice: "1.99",
-        itemImg: "assets/img/lapiz azul.webp",
+        itemImg: "assets/img/lapiz_azul.webp",
         dataSale: 30,
         itemOfferPrice: "",
         itemTotalPrice: "1.99",
@@ -72,7 +72,7 @@ const order = [
         lacus. Nulla finibus ultricies velit eu ultricies. Proin quis tellus lacinia, congue
         erat nec.`,
         itemPrice: "1.99",
-        itemImg: "assets/img/lapiz azul.webp",
+        itemImg: "assets/img/lapiz_azul.webp",
         dataSale: 35,
         itemOfferPrice: "",
         itemTotalPrice: "1.99",
@@ -104,7 +104,7 @@ const order = [
         scelerisque erat. Integer sit amet hendrerit mauris, et rutrum ipsum. Phasellus
         vitae eros ante.`,
         itemPrice: "3.00",
-        itemImg: "assets/img/rotulador negro.jfif",
+        itemImg: "assets/img/rotulador_negro.jfif",
         dataSale: 0,
         itemOfferPrice: "",
         itemTotalPrice: "3.00",
