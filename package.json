@@ -1,0 +1,24 @@
+{
+  "name": "practica-3",
+  "version": "1.0.0",
+  "description": "Ejercicio para clase de Gráfica multimedia. Producción de la Escuela Supeerior de Diseño de Madrid.\r Realizado con HTML, Sass y JavaScript.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "node-sass assets/sass/main.scss assets/css/main.css --output-style compressed",
+    "watch:sass": "npm run sass -- --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Roberto5190/ejercicio_carrito.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Roberto5190/ejercicio_carrito/issues"
+  },
+  "homepage": "https://github.com/Roberto5190/ejercicio_carrito#readme",
+  "devDependencies": {
+    "node-sass": "^9.0.0"
+  }
+}
