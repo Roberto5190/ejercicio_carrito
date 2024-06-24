@@ -122,8 +122,8 @@ $font_route_a: '../../assets/fonts/source-sans';
 
 @font-face {
     font-family: 'Roboto';
-    src: url('Roboto-Medium.woff2') format('woff2'),
-        url('Roboto-Medium.woff') format('woff');
+    src: url('../../assets/fonts/Roboto-Medium.woff2') format('woff2'),
+        url('../../assets/fonts/Roboto-Medium.woff') format('woff');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
@@ -131,8 +131,8 @@ $font_route_a: '../../assets/fonts/source-sans';
 
 @font-face {
     font-family: 'Roboto';
-    src: url('Roboto-LightItalic.woff2') format('woff2'),
-        url('Roboto-LightItalic.woff') format('woff');
+    src: url('../../assets/fonts/Roboto-LightItalic.woff2') format('woff2'),
+        url('../../assets/fonts/Roboto-LightItalic.woff') format('woff');
     font-weight: 300;
     font-style: italic;
     font-display: swap;
@@ -140,8 +140,8 @@ $font_route_a: '../../assets/fonts/source-sans';
 
 @font-face {
     font-family: 'Roboto';
-    src: url('Roboto-Light.woff2') format('woff2'),
-        url('Roboto-Light.woff') format('woff');
+    src: url('../../assets/fonts/Roboto-Light.woff2') format('woff2'),
+        url('../../assets/fonts/Roboto-Light.woff') format('woff');
     font-weight: 300;
     font-style: normal;
     font-display: swap;
@@ -149,8 +149,8 @@ $font_route_a: '../../assets/fonts/source-sans';
 
 @font-face {
     font-family: 'Roboto';
-    src: url('Roboto-ThinItalic.woff2') format('woff2'),
-        url('Roboto-ThinItalic.woff') format('woff');
+    src: url('../../assets/fonts/Roboto-ThinItalic.woff2') format('woff2'),
+        url('../../assets/fonts/Roboto-ThinItalic.woff') format('woff');
     font-weight: 100;
     font-style: italic;
     font-display: swap;
@@ -158,8 +158,8 @@ $font_route_a: '../../assets/fonts/source-sans';
 
 @font-face {
     font-family: 'Roboto';
-    src: url('Roboto-Regular.woff2') format('woff2'),
-        url('Roboto-Regular.woff') format('woff');
+    src: url('../../assets/fonts/Roboto-Regular.woff2') format('woff2'),
+        url('../assets/fonts/Roboto-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -167,8 +167,8 @@ $font_route_a: '../../assets/fonts/source-sans';
 
 @font-face {
     font-family: 'Roboto';
-    src: url('Roboto-BoldItalic.woff2') format('woff2'),
-        url('Roboto-BoldItalic.woff') format('woff');
+    src: url('../../assets/fonts/Roboto-BoldItalic.woff2') format('woff2'),
+        url('../../assets/fonts/Roboto-BoldItalic.woff') format('woff');
     font-weight: bold;
     font-style: italic;
     font-display: swap;
@@ -176,8 +176,8 @@ $font_route_a: '../../assets/fonts/source-sans';
 
 @font-face {
     font-family: 'Roboto';
-    src: url('Roboto-BlackItalic.woff2') format('woff2'),
-        url('Roboto-BlackItalic.woff') format('woff');
+    src: url('../assets/fonts/Roboto-BlackItalic.woff2') format('woff2'),
+        url('../assets/fonts/Roboto-BlackItalic.woff') format('woff');
     font-weight: 900;
     font-style: italic;
     font-display: swap;
@@ -185,8 +185,8 @@ $font_route_a: '../../assets/fonts/source-sans';
 
 @font-face {
     font-family: 'Roboto';
-    src: url('Roboto-Italic.woff2') format('woff2'),
-        url('Roboto-Italic.woff') format('woff');
+    src: url('../../assets/fonts/Roboto-Italic.woff2') format('woff2'),
+        url('../../assets/fonts/Roboto-Italic.woff') format('woff');
     font-weight: normal;
     font-style: italic;
     font-display: swap;
@@ -194,8 +194,8 @@ $font_route_a: '../../assets/fonts/source-sans';
 
 @font-face {
     font-family: 'Roboto';
-    src: url('Roboto-Thin.woff2') format('woff2'),
-        url('Roboto-Thin.woff') format('woff');
+    src: url('../../assets/fonts/Roboto-Thin.woff2') format('woff2'),
+        url('../../assets/fonts/Roboto-Thin.woff') format('woff');
     font-weight: 100;
     font-style: normal;
     font-display: swap;
@@ -203,8 +203,8 @@ $font_route_a: '../../assets/fonts/source-sans';
 
 @font-face {
     font-family: 'Roboto';
-    src: url('Roboto-MediumItalic.woff2') format('woff2'),
-        url('Roboto-MediumItalic.woff') format('woff');
+    src: url('../../assets/fonts/Roboto-MediumItalic.woff2') format('woff2'),
+        url('../../assets/fonts/Roboto-MediumItalic.woff') format('woff');
     font-weight: 500;
     font-style: italic;
     font-display: swap;
@@ -212,8 +212,8 @@ $font_route_a: '../../assets/fonts/source-sans';
 
 @font-face {
     font-family: 'Roboto';
-    src: url('Roboto-Bold.woff2') format('woff2'),
-        url('Roboto-Bold.woff') format('woff');
+    src: url('../../assets/fonts/Roboto-Bold.woff2') format('woff2'),
+        url('../../assets/fonts/Roboto-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -221,8 +221,8 @@ $font_route_a: '../../assets/fonts/source-sans';
 
 @font-face {
     font-family: 'Roboto';
-    src: url('Roboto-Black.woff2') format('woff2'),
-        url('Roboto-Black.woff') format('woff');
+    src: url('../../assets/fonts/Roboto-Black.woff2') format('woff2'),
+        url('../../assets/fonts/Roboto-Black.woff') format('woff');
     font-weight: 900;
     font-style: normal;
     font-display: swap;

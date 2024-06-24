@@ -11,7 +11,7 @@ const order = [
         lacus.Nulla finibus ultricies velit eu ultricies.Proin quis tellus lacinia, congue
         erat nec, ultrices nisl.`,
         itemPrice: "20.50",
-        itemImg: "/assets/img/libro.jpg",
+        itemImg: "../assets/img/libro.jpg",
         dataSale: 60,
         itemOfferPrice: "",
         itemTotalPrice: "20.50",
