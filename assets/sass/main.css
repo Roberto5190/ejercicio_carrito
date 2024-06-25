@@ -6988,6 +6988,7 @@ meter {
 .header .header_left .header_logo {
   display: flex;
   height: 35px;
+  width: 40px;
 }
 .header .header_left .header_logo img {
   width: 100%;
@@ -7358,7 +7359,7 @@ meter {
 }
 .hero .hero_img {
   display: flex;
-  width: 1180px;
+  max-width: 1180px;
   margin: 0 auto;
 }
 .hero .hero_img img {
@@ -7810,8 +7811,13 @@ meter {
 }
 .categories .categories_nav {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   align-items: center;
+  overflow-x: auto;
+  scrollbar-width: none;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
   gap: 1.75rem;
   padding: 1rem;
 }
