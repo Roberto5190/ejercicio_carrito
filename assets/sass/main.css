@@ -7864,6 +7864,7 @@ meter {
   -webkit-overflow-scrolling: touch;
   gap: 1.75rem;
   padding: 1rem;
+  z-index: 1;
 }
 .categories .categories_nav .category_btn {
   display: flex;
