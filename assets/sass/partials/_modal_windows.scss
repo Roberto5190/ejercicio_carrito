@@ -1,9 +1,8 @@
 .modal_windows {
     display: flex;
     flex-wrap: wrap;
-    max-width: clamp(320px, 70vw, 700px); //ancho máximo que varía entre 320px y 740px, dependiendo del ancho de la ventana gráfica (viewport) 
+    min-width: clamp(320px, 70vw, 700px); //ancho máximo que varía entre 320px y 740px, dependiendo del ancho de la ventana gráfica (viewport) 
     max-height: 90%;
-    min-width: 320px;
     min-height: 280px;
     visibility: hidden;
     position: fixed;
@@ -47,6 +46,7 @@
             justify-content: center;
             align-items: center;
             gap: 1.5rem;
+
             .modal_window_picture {
                 width: 200px;
                 background-color: white;
@@ -67,7 +67,7 @@
                 flex-direction: column;
                 justify-content: space-between;
                 gap: 1.5rem;
-                width: 60%;
+                
 
                 .modal_window_content_text {
                     .modal_window_content_top {
