@@ -6978,7 +6978,7 @@ meter {
   width: 100%;
   top: 0;
   left: 0;
-  z-index: 100;
+  z-index: 9;
 }
 .header .header_left {
   display: flex;
@@ -7846,7 +7846,7 @@ meter {
 .categories {
   margin: 0 auto;
   max-width: 1180px;
-  z-index: 1;
+  z-index: -1;
 }
 .categories h3 {
   color: white;
@@ -7879,6 +7879,7 @@ meter {
   background-color: #bcc3c9;
   color: #697089;
   cursor: pointer;
+  z-index: 0;
 }
 .categories .categories_nav .category_btn .btn_img {
   width: 3rem;

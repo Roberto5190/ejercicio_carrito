@@ -1,8 +1,8 @@
 .categories {
     margin: 0 auto;
     max-width: 1180px;
-    z-index: 1;
-    
+    z-index: -1;
+
     h3 {
         color: white;
         font-size: x-large;
@@ -39,6 +39,7 @@
             color: $color_medium;
             cursor: pointer;
 
+            z-index: 0;
             .btn_img {
                 width: 3rem;
 
