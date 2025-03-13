@@ -7046,10 +7046,14 @@ meter {
 }
 .header .header_right .header_user_toggle .icon {
   display: flex;
-  padding: 0.5rem;
-  border-radius: 100%;
+  color: #050505;
   background-color: #FFC222;
-  color: #0C0E19;
+  border-radius: 8px;
+  display: flex;
+  padding: 8px 12px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
 }
 .header .header_right .header_user_toggle .user_menu {
   display: none;
@@ -7075,21 +7079,27 @@ meter {
   position: relative;
 }
 .header .header_right .header_fav_toggle .icon {
-  padding: 0.5rem;
-  border-radius: 100%;
+  color: #050505;
   background-color: #FFC222;
-  color: #0C0E19;
+  border-radius: 8px;
   display: flex;
+  padding: 8px 12px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
 }
 .header .header_right .header_cart_toggle {
   position: relative;
 }
 .header .header_right .header_cart_toggle .icon {
-  display: flex;
-  padding: 0.5rem;
-  border-radius: 100%;
+  color: #050505;
   background-color: #FFC222;
-  color: #0C0E19;
+  border-radius: 8px;
+  display: flex;
+  padding: 8px 12px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
 }
 .header .header_right .header_cart_toggle .bubble {
   display: none;
@@ -7101,7 +7111,7 @@ meter {
   padding: 1.75px 5.5px;
   position: absolute;
   right: -6px;
-  bottom: -6px;
+  top: -6px;
   width: auto;
   height: auto;
 }
@@ -7529,23 +7539,26 @@ meter {
 .card .card_content .card_content_top .card_content_top_left {
   display: flex;
   flex-direction: column;
-  color: #2227F7;
 }
 .card .card_content .card_content_top .card_content_top_left .card_identifier {
   display: none;
 }
 .card .card_content .card_content_top .card_content_top_left .card_title {
-  font-family: "Nohemi";
-  font-weight: 1000;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
 }
 .card .card_content .card_content_top .card_content_top_left .card_subtitle {
-  font-size: x-small;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  color: #6C4E00;
 }
 .card .card_content .card_content_top .card_content_top_right {
-  font-weight: 900;
-  font-size: small;
-  color: #2227F7;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  font-weight: bold;
 }
 .card .card_content .card_content_top .card_description {
   display: none;
@@ -7579,15 +7592,19 @@ meter {
   scale: 1.1;
 }
 .card .card_content .card_content_button .button_secondary {
-  font-weight: 600;
-  color: #2227F7;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  border-radius: 8px;
-  border: 2px solid #2227F7;
   transition: background-color 0.3s ease-in, color 0.3s ease;
+  color: #FFFFFF;
+  background-color: #2227F7;
+  border: 2px solid #0C0E19;
+  border-radius: 8px;
+  box-shadow: 0 4px 0 black;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
 }
 .card .card_content .card_content_button .button_secondary .card_button_secondary_icon {
   margin-top: 0.2rem;

@@ -140,7 +140,6 @@
             .card_content_top_left {
                 display: flex;
                 flex-direction: column;
-                color: $color_secondary_400;
 
 
                 .card_identifier {
@@ -148,20 +147,19 @@
                 }
 
                 .card_title {
-                    font-family: 'Nohemi';
-                    font-weight: 1000;
+                    @include body1_bold_desktop;
                 }
 
                 .card_subtitle {
-                    font-size: x-small;
+                    @include small_desktop;
+                    color: $color_primary_600;
                 }
             }
 
             .card_content_top_right {
-                font-weight: 900;
-                font-size: small;
-                color: $color_secondary_400;
-                font-family: $font_family_base;
+                @include body1_bold_desktop;
+                font-weight: bold;
+
 
                 .amount {}
 
@@ -211,16 +209,12 @@
             }
 
             .button_secondary {
-                font-weight: 600;
-                // background-color: $color_secondary;
-                color:$color_secondary_400;
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 gap: 1rem;
-                border-radius: 8px;
-                border: 2px solid $color_secondary_400;
                 transition: background-color 0.3s ease-in, color 0.3s ease;
+                @include button_s_style_border($color_gray_100, $color_secondary_400);
 
 
                 .card_button_secondary_text {}

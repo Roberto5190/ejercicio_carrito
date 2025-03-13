@@ -79,7 +79,7 @@
 @mixin f_button_s_desktop {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 @mixin f_button_m_desktop {
@@ -188,4 +188,57 @@
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
     font-weight: 600;
+}
+
+
+// STYLES
+@mixin button_s_style_border($color, $bcolor) {
+    color: $color;
+    background-color: $bcolor;
+    border: 2px solid $color_dark;
+    border-radius: $button_radius_s;
+    box-shadow: $border_button;
+
+    @include f_button_s_desktop;
+}
+
+@mixin button_s_style($color, $bcolor) {
+    color: $color;
+    background-color: $bcolor;
+    border: 2px solid $color_dark;
+    border-radius: $button_radius_s;
+
+
+    @include f_button_s_desktop;
+}
+
+@mixin button_s_style_no_border($color, $bcolor) {
+    color: $color;
+    background-color: $bcolor;
+    border-radius: $button_radius_s;
+
+    display: flex;
+    padding: 8px 12px;
+
+    @include f_button_s_desktop;
+}
+
+@mixin button_m_style_border($color, $bcolor) {
+    color: $color;
+    background-color: $bcolor;
+    border: 2px solid $color_dark;
+    border-radius: $button_radius_m;
+    box-shadow: $border_button;
+
+    @include f_button_m_desktop;
+}
+
+@mixin button_l_style_border($color, $bcolor) {
+    color: $color;
+    background-color: $bcolor;
+    border: 2px solid $color_dark;
+    border-radius: $button_radius_l;
+    box-shadow: $border_button;
+
+    @include f_button_l_desktop;
 }

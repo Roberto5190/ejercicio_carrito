@@ -14,7 +14,7 @@
     align-items: center;
     padding: 0.5rem 2rem;
     background-color: #ffffff;
-    // box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+
 
     .header_left {
         display: flex;
@@ -97,10 +97,7 @@
 
             .icon {
                 display: flex;
-                padding: .5rem;
-                border-radius: 100%;
-                background-color: $color_primary_400;
-                color: $color_dark;
+                @include button_s_style_no_border($color_gray_700, $color_primary_400);
 
                 svg {}
             }
@@ -140,11 +137,7 @@
             position: relative;
 
             .icon {
-                padding: .5rem;
-                border-radius: 100%;
-                background-color: $color_primary_400;
-                color: $color_dark;
-                display: flex;
+                @include button_s_style_no_border($color_gray_700, $color_primary_400);
 
                 svg {}
             }
@@ -154,11 +147,7 @@
             position: relative;
 
             .icon {
-                display: flex;
-                padding: .5rem;
-                border-radius: 100%;
-                background-color: $color_primary_400;
-                color: $color_dark;
+                @include button_s_style_no_border($color_gray_700, $color_primary_400);
 
                 .bi {}
             }
@@ -173,7 +162,7 @@
                 padding: 1.75px 5.5px;
                 position: absolute;
                 right: -6px;
-                bottom: -6px;
+                top: -6px;
                 width: auto;
                 height: auto;
 
