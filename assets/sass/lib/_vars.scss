@@ -1,18 +1,69 @@
+// Font
 $font_family_base: 'Roboto';
 $font_size_base: 1rem;
 $font_weight_base: normal;
 $line_height_base: 1.5rem;
+
+
+
+
+// Color
 $body_color: #333;
 $body_bg: #0C0E19;
 $link_color: #345c8d; 
-$color_primary: #FFF07D; //#F3FFB3    #FFF07D
-$color_primary_light: #F8FFD6;
-$color_secondary: #03035c; //#303651   03035c 202020
+
+// Neutral
+$color_gray_700: #050505;
+$color_gray_600: #1A1A1A; 
+$color_gray_500: #4E4E4E; 
+$color_gray_400: #828282; 
+$color_gray_300: #C1C1C1; 
+$color_gray_200: #EAEAEA; 
+$color_gray_100: #FFFFFF;
+
+// Color-Primary
+$color_primary_700: #241A00;
+$color_primary_600: #6C4E00; 
+$color_primary_550: #B58300;
+$color_primary_500: #D99D00; 
+$color_primary_400: #FFC222; //primario
+$color_primary_300: #FFD361; 
+$color_primary_200: #FFE6A5; 
+$color_primary_100: #FFF8E5; 
+
+// Color Secondary
+$color_secondary_700: #010111;
+$color_secondary_600: #020444; 
+$color_secondary_500: #060AA9; 
+$color_secondary_400: #2227F7; //secundario
+$color_secondary_300: #5283E0; 
+$color_secondary_200: #979AFB; 
+$color_secondary_100: #E5E6FE; 
+
+
+
+
+
+// border-button
+$border_button: 0 4px 0 black;
+
 $color_dark: #0C0E19;
 $color_medium_dark: #4A516D;
 $color_medium: #697089;
 $color_light: #bcc3c9;
 $color_light2: #dbe2e9;
+
+
+// Boder-radius
+$button_radius_s: 8px;
+$button_radius_m: 12px;
+$button_radius_l: 16px;
+
+//Card
+$card_img_radius: 16px;
+
+
+// Link
 $link_decoration: none; 
 $link_hover_color: darken($link_color, 10%); 
 $link_hover_decoration: none; 

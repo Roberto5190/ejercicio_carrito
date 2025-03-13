@@ -32,9 +32,9 @@
                         gap: .5rem;
                         padding: .25rem .75rem;
                         border-radius: 6px;
-                        border: 2px solid $color_primary;
+                        border: 2px solid $color_primary_400;
                         // background-color: $color_primary;
-                        color: $color_primary;
+                        color: $color_primary_400;
     
                         .filter_tag_text {
                             font-weight: bold;
@@ -127,7 +127,7 @@
         flex-direction: column;
         padding: .25rem 1rem 1rem 1rem;
         gap: .5rem;
-        background-color: $color_primary;
+        background-color: $color_primary_400;
         border-radius: 0px 0px 12px 12px;
 
         .card_content_top {
@@ -140,7 +140,7 @@
             .card_content_top_left {
                 display: flex;
                 flex-direction: column;
-                color: $color_secondary;
+                color: $color_secondary_400;
 
 
                 .card_identifier {
@@ -160,7 +160,7 @@
             .card_content_top_right {
                 font-weight: 900;
                 font-size: small;
-                color: $color_secondary;
+                color: $color_secondary_400;
                 font-family: $font_family_base;
 
                 .amount {}
@@ -190,9 +190,9 @@
                     display: flex;
                     align-items: center;
                     width: 30%;
-                    background-color: $color_primary;
+                    background-color: $color_primary_400;
                     font-weight: 500;
-                    color: $color_secondary;
+                    color: $color_secondary_400;
                     justify-content: center;
 
                 }
@@ -205,7 +205,7 @@
                 }
 
                 &.fav_button svg:hover {
-                    color: $color_secondary;
+                    color: $color_secondary_400;
                     scale: 1.1;
                 }
             }
@@ -213,13 +213,13 @@
             .button_secondary {
                 font-weight: 600;
                 // background-color: $color_secondary;
-                color: $color_secondary;
+                color:$color_secondary_400;
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 gap: 1rem;
                 border-radius: 8px;
-                border: 2px solid $color_secondary;
+                border: 2px solid $color_secondary_400;
                 transition: background-color 0.3s ease-in, color 0.3s ease;
 
 
@@ -231,7 +231,7 @@
             }
 
             :hover.button_secondary {
-                background-color: $color_secondary;
+                background-color: $color_secondary_400;
                 color: white;
 
             }

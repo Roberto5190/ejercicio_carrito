@@ -6969,16 +6969,19 @@ meter {
 }
 
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9;
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0.5rem 2rem;
   background-color: #ffffff;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
-  z-index: 9;
 }
 .header .header_left {
   display: flex;
@@ -7045,7 +7048,7 @@ meter {
   display: flex;
   padding: 0.5rem;
   border-radius: 100%;
-  background-color: #FFF07D;
+  background-color: #FFC222;
   color: #0C0E19;
 }
 .header .header_right .header_user_toggle .user_menu {
@@ -7074,7 +7077,7 @@ meter {
 .header .header_right .header_fav_toggle .icon {
   padding: 0.5rem;
   border-radius: 100%;
-  background-color: #FFF07D;
+  background-color: #FFC222;
   color: #0C0E19;
   display: flex;
 }
@@ -7085,12 +7088,12 @@ meter {
   display: flex;
   padding: 0.5rem;
   border-radius: 100%;
-  background-color: #FFF07D;
+  background-color: #FFC222;
   color: #0C0E19;
 }
 .header .header_right .header_cart_toggle .bubble {
   display: none;
-  background-color: #03035c;
+  background-color: #2227F7;
   border-radius: 9999px;
   font-weight: bold;
   font-size: x-small;
@@ -7358,10 +7361,10 @@ meter {
   width: 100%;
   text-align: center;
   white-space: nowrap;
-  border: 2px solid #03035c;
+  border: 2px solid #2227F7;
   border-radius: 12px;
   padding: 0.5rem 0;
-  color: #03035c;
+  color: #2227F7;
   background-color: white;
   transition: background-color 0.3s ease-in, color 0.2s ease;
   cursor: pointer;
@@ -7382,7 +7385,7 @@ meter {
 .header .drawer .drawer_content .checkout .free_delivery_bar .free_delivery_progress_bar {
   width: 50%;
   height: 100%;
-  background-color: #03035c;
+  background-color: #2227F7;
   border-radius: 12px;
   transition: 0.3s width ease-in;
 }
@@ -7392,7 +7395,7 @@ meter {
 }
 .header .drawer .drawer_content .checkout :hover.checkout_button {
   color: white;
-  background-color: #03035c;
+  background-color: #2227F7;
 }
 .header .drawer .drawer_content .checkout.opened {
   display: flex;
@@ -7452,8 +7455,8 @@ meter {
   gap: 0.5rem;
   padding: 0.25rem 0.75rem;
   border-radius: 6px;
-  border: 2px solid #FFF07D;
-  color: #FFF07D;
+  border: 2px solid #FFC222;
+  color: #FFC222;
 }
 .main .most_read .filter_bar .filter_bar_left .filter_tags .filter_tag .filter_tag_text {
   font-weight: bold;
@@ -7514,7 +7517,7 @@ meter {
   flex-direction: column;
   padding: 0.25rem 1rem 1rem 1rem;
   gap: 0.5rem;
-  background-color: #FFF07D;
+  background-color: #FFC222;
   border-radius: 0px 0px 12px 12px;
 }
 .card .card_content .card_content_top {
@@ -7526,7 +7529,7 @@ meter {
 .card .card_content .card_content_top .card_content_top_left {
   display: flex;
   flex-direction: column;
-  color: #03035c;
+  color: #2227F7;
 }
 .card .card_content .card_content_top .card_content_top_left .card_identifier {
   display: none;
@@ -7541,7 +7544,7 @@ meter {
 .card .card_content .card_content_top .card_content_top_right {
   font-weight: 900;
   font-size: small;
-  color: #03035c;
+  color: #2227F7;
   font-family: "Roboto";
 }
 .card .card_content .card_content_top .card_description {
@@ -7563,34 +7566,34 @@ meter {
   display: flex;
   align-items: center;
   width: 30%;
-  background-color: #FFF07D;
+  background-color: #FFC222;
   font-weight: 500;
-  color: #03035c;
+  color: #2227F7;
   justify-content: center;
 }
 .card .card_content .card_content_button .button.fav_button {
   transition: 0.3s ease-in;
 }
 .card .card_content .card_content_button .button.fav_button svg:hover {
-  color: #03035c;
+  color: #2227F7;
   scale: 1.1;
 }
 .card .card_content .card_content_button .button_secondary {
   font-weight: 600;
-  color: #03035c;
+  color: #2227F7;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 1rem;
   border-radius: 8px;
-  border: 2px solid #03035c;
+  border: 2px solid #2227F7;
   transition: background-color 0.3s ease-in, color 0.3s ease;
 }
 .card .card_content .card_content_button .button_secondary .card_button_secondary_icon {
   margin-top: 0.2rem;
 }
 .card .card_content .card_content_button :hover.button_secondary {
-  background-color: #03035c;
+  background-color: #2227F7;
   color: white;
 }
 
@@ -7720,9 +7723,9 @@ meter {
   width: fit-content;
   padding: 0.5rem 1.5rem;
   margin-top: 1rem;
-  background-color: #FFF07D;
+  background-color: #FFC222;
   border-radius: 2px;
-  color: #03035c;
+  color: #2227F7;
   font-weight: bold;
   box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.1);
   align-items: center;
@@ -7739,9 +7742,9 @@ meter {
 .modal_windows .modal_window_body .modal_windows_body_content .modal_window_content .buttons .button {
   display: flex;
   flex-wrap: nowrap;
-  border: 2px solid #03035c;
+  border: 2px solid #2227F7;
   border-radius: 8px;
-  color: #03035c;
+  color: #2227F7;
   padding: 0.5rem 1.25rem;
   cursor: pointer;
 }
@@ -7759,7 +7762,7 @@ meter {
   margin-top: 0.1rem;
 }
 .modal_windows .modal_window_body .modal_windows_body_content .modal_window_content .buttons .button:hover.button_add_card {
-  background-color: #03035c;
+  background-color: #2227F7;
   color: white;
 }
 .modal_windows .modal_window_body .modal_windows_body_content .modal_window_content .buttons .counter_buttons {
@@ -7783,8 +7786,8 @@ meter {
 }
 .modal_windows .modal_window_body .modal_windows_body_content .modal_window_content .buttons .counter_buttons :hover.counter_buttons_plus {
   transition: 0.3s;
-  background-color: #03035c;
-  border-color: #03035c;
+  background-color: #2227F7;
+  border-color: #2227F7;
   color: white;
   scale: 1.3;
 }
@@ -7801,8 +7804,8 @@ meter {
 }
 .modal_windows .modal_window_body .modal_windows_body_content .modal_window_content .buttons .counter_buttons :hover.counter_buttons_minus {
   transition: 0.3s;
-  background-color: #03035c;
-  border-color: #03035c;
+  background-color: #2227F7;
+  border-color: #2227F7;
   color: white;
   scale: 0.8;
 }
@@ -7814,12 +7817,12 @@ meter {
   height: auto;
 }
 .modal_windows .modal_window_body .modal_windows_body_content .modal_window_content .buttons .counter .counter_number {
-  border: 2px solid #03035c;
+  border: 2px solid #2227F7;
   background-color: white;
   border-radius: 9999px;
   font-weight: bold;
   font-size: x-small;
-  color: #03035c;
+  color: #2227F7;
   padding: 1.75px 5.5px;
 }
 .modal_windows .modal_window_body .modal_windows_body_content .modal_window_content .buttons .counter .counter_number.opened {
@@ -7828,8 +7831,8 @@ meter {
 .modal_windows .modal_window_body .modal_windows_body_content .modal_window_content .buttons .sub_buttons .button {
   margin-left: 1rem;
   border: none;
-  color: #03035c;
-  background-color: #FFF07D;
+  color: #2227F7;
+  background-color: #FFC222;
   border-radius: 16px;
   padding: 0.6rem 0.75rem;
   display: flex;
@@ -7906,7 +7909,7 @@ meter {
 .categories .categories_nav .category_btn.category_btn:hover {
   color: #0C0E19;
   background-color: #fff;
-  box-shadow: inset 0 0 0 4px #FFF07D;
+  box-shadow: inset 0 0 0 4px #FFC222;
 }
 .categories .categories_nav .category_btn.category_btn:hover .btn_img svg {
   fill: #0C0E19;
@@ -7917,7 +7920,7 @@ meter {
 .categories .categories_nav .category_btn.opened {
   color: #0C0E19;
   background-color: #fff;
-  box-shadow: inset 0 0 0 4px #FFF07D;
+  box-shadow: inset 0 0 0 4px #FFC222;
 }
 .categories .categories_nav .category_btn.opened .btn_img svg {
   fill: #0C0E19;
