@@ -1,0 +1,244 @@
+// FONT STYLES
+
+// Desktop
+@mixin h1_desktop {
+
+    font-family: 'Nohemi', sans-serif;
+    font-size: 72px;
+    font-weight: bold;
+
+}
+
+@mixin h2_desktop {
+        font-family: 'Nohemi', sans-serif;
+        font-size: 60px;
+        font-weight: bold;
+}
+
+@mixin h3_desktop {
+    font-family: 'Roboto', sans-serif;
+    font-size: 48px;
+    font-weight: normal;
+}
+
+@mixin h4_desktop {
+    font-family: 'Roboto', sans-serif;
+    font-size: 36px;
+    font-weight: normal;
+}
+
+@mixin subtitle1_desktop {
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    font-weight: normal;
+}
+
+@mixin subtitle2_desktop {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+@mixin body1_bold_desktop {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+@mixin body1_desktop {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+@mixin body2_bold_desktop {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+@mixin body2_desktop {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+
+@mixin caption_desktop {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+@mixin small_desktop {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+@mixin f_button_s_desktop {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+@mixin f_button_m_desktop {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+@mixin f_button_l_desktop {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+
+// FONT MOBILE
+@mixin h1_mobile {
+
+    font-family: 'Nohemi', sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+
+}
+
+@mixin h2_mobile {
+        font-family: 'Nohemi', sans-serif;
+        font-size: 40px;
+        font-weight: bold;
+}
+
+@mixin h3_mobile {
+    font-family: 'Roboto', sans-serif;
+    font-size: 36px;
+    font-weight: normal;
+}
+
+@mixin h4_mobile {
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    font-weight: normal;
+}
+
+@mixin subtitle1_mobile {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+@mixin subtitle2_mobile {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+@mixin body1_bold_mobile {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+@mixin body1_mobile {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+@mixin body2_bold_mobile {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+@mixin body2_mobile {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+
+@mixin caption_mobile {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+@mixin small_mobile {
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+    font-weight: normal;
+}
+
+@mixin f_button_s_mobile {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+@mixin f_button_m_mobile {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+@mixin f_button_l_mobile {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+// STYLES
+@mixin button_s_style_border($color, $bcolor) {
+    color: $color;
+    background-color: $bcolor;
+    border: 2px solid $color_dark;
+    border-radius: $button_radius_s;
+    box-shadow: $border_button;
+
+    @include f_button_s_desktop;
+}
+
+@mixin button_s_style($color, $bcolor) {
+    color: $color;
+    background-color: $bcolor;
+    border: 2px solid $color_dark;
+    border-radius: $button_radius_s;
+
+
+    @include f_button_s_desktop;
+}
+
+@mixin button_s_style_no_border($color, $bcolor) {
+    color: $color;
+    background-color: $bcolor;
+    border-radius: $button_radius_s;
+
+    display: flex;
+    padding: 8px 12px;
+
+    @include f_button_s_desktop;
+}
+
+@mixin button_m_style_border($color, $bcolor) {
+    color: $color;
+    background-color: $bcolor;
+    border: 2px solid $color_dark;
+    border-radius: $button_radius_m;
+    box-shadow: $border_button;
+
+    @include f_button_m_desktop;
+}
+
+@mixin button_l_style_border($color, $bcolor) {
+    color: $color;
+    background-color: $bcolor;
+    border: 2px solid $color_dark;
+    border-radius: $button_radius_l;
+    box-shadow: $border_button;
+
+    @include f_button_l_desktop;
+}
