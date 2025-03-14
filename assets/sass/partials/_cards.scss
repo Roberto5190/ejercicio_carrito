@@ -5,14 +5,12 @@
     padding: 1rem;
     color: white;
 
+
     .most_read {
         display: flex;
         flex-direction: column;
         gap: 2rem;
-        h3 {
-            font-size: x-large;
-            font-weight: bold;
-        }
+
 
         .filter_bar {
             display: flex;
@@ -20,11 +18,12 @@
             align-items: center;
 
             .filter_bar_left {
-                
+
                 .filter_tags {
                     display: flex;
                     align-items: center;
                     gap: .5rem;
+
                     .filter_tag {
                         display: none;
                         justify-content: space-between;
@@ -35,26 +34,30 @@
                         border: 2px solid $color_primary_400;
                         // background-color: $color_primary;
                         color: $color_primary_400;
-    
+
                         .filter_tag_text {
                             font-weight: bold;
                         }
-    
+
                         .filter_tag_delete_icon {
                             display: flex;
                             cursor: pointer;
+
                             svg {
                                 margin-top: .1rem;
                             }
                         }
+
                         &.opened {
                             display: flex;
                             transition: background-color 0.3s ease-in, color 0.3s ease;
                         }
                     }
                 }
+
                 // .filter_tags
             }
+
             // .filter_bar_left
 
             .filter_bar_right {
@@ -68,6 +71,7 @@
                         .search_icon {
                             display: flex;
                             cursor: pointer;
+
                             svg {}
                         }
                     }
@@ -76,16 +80,18 @@
                         .filter_icon {
                             display: flex;
                             cursor: pointer;
-                            svg {
-                                
-                            }
+
+                            svg {}
                         }
                     }
                 }
+
                 // ul
             }
+
             // .filter_bar_right
         }
+
         // .filter_bar
 
         .gallery {
@@ -106,7 +112,14 @@
     border-radius: 12px 12px 12px 12px;
     color: $color_dark;
     font-family: 'Roboto';
-    // max-width: 400px;
+    max-width: 300px;
+
+
+    @media (width < 600px) {
+        max-width: 300px;
+
+    }
+
 
     .card_picture {
         background-color: #ffffff;
@@ -187,7 +200,6 @@
                 &.button_primary {
                     display: flex;
                     align-items: center;
-                    width: 30%;
                     background-color: $color_primary_400;
                     font-weight: 500;
                     color: $color_secondary_400;
@@ -196,7 +208,8 @@
                 }
 
                 &.fav_button {
-
+                    @include button_s_style_no_border($color_gray_700, $color_gray_200);
+                    width: auto;
                     transition: .3s ease-in;
 
                     svg {}
@@ -212,6 +225,7 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                width: 70%;
                 gap: 1rem;
                 transition: background-color 0.3s ease-in, color 0.3s ease;
                 @include button_s_style_border($color_gray_100, $color_secondary_400);

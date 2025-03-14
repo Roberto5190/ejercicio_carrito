@@ -38,8 +38,8 @@
             display: flex;
             align-items: center;
             gap: 1rem;
-            font-weight: bold;
-            font-size: 1rem;
+            @include f_button_m_desktop;
+            color: $color_gray_700;
 
 
 
@@ -55,6 +55,7 @@
             }
 
             .shop {
+
                 @media (width < 600px) {
                     & {
                         display: none;
@@ -63,6 +64,11 @@
             }
 
             .about_us {
+                color: $color_gray_400;
+
+                &:hover{
+                    color: $color_gray_700;
+                }
                 @media (width < 600px) {
                     & {
                         display: none;
@@ -71,6 +77,11 @@
             }
 
             .contact {
+                color: $color_gray_400;
+
+                &:hover{
+                    color: $color_gray_700;
+                }
                 @media (width < 600px) {
                     & {
                         display: none;
@@ -98,7 +109,7 @@
             .icon {
                 display: flex;
                 @include button_s_style_no_border($color_gray_700, $color_primary_400);
-
+                cursor: pointer;
                 svg {}
             }
 
@@ -112,6 +123,7 @@
                 top: calc(100% + 2rem);
                 right: -.1rem;
                 background-color: #fff;
+                
 
                 .user_menu_top {
                     display: flex;
@@ -135,6 +147,7 @@
 
         .header_fav_toggle {
             position: relative;
+            cursor: pointer;
 
             .icon {
                 @include button_s_style_no_border($color_gray_700, $color_primary_400);
@@ -145,7 +158,7 @@
 
         .header_cart_toggle {
             position: relative;
-
+            cursor: pointer;
             .icon {
                 @include button_s_style_no_border($color_gray_700, $color_primary_400);
 
