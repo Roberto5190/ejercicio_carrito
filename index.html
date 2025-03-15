@@ -17,17 +17,15 @@
     <link rel="stylesheet" href="assets/sass/main.css.map" />
 </head>
 
-
 <body>
     <div class="app">
         <header class="header">
             <div class="header_center">
                 <div class="header_left">
                     <div class="header_logo">
-                        <img src="assets/img/panda-mini.jpg" alt="">
+                        <img src="assets/img/logo-horizontal.png" alt="Logo horizontal Irasi">
                     </div>
                     <div class="header_menu">
-                        <a href="" class="menu">Menu</a>
                         <a href="" class="shop">Tienda</a>
                         <a href="" class="about_us">Sobre nosotros</a>
                         <a href="" class="contact">Contacto</a>
@@ -35,14 +33,21 @@
                 </div>
 
                 <div class="header_right">
+                    <span class="menu_icon">
+                        <svg width="16" height="16" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M1.11111 20H18.8889C19.5 20 20 19.25 20 18.3333C20 17.4167 19.5 16.6667 18.8889 16.6667H1.11111C0.5 16.6667 0 17.4167 0 18.3333C0 19.25 0.5 20 1.11111 20ZM1.11111 11.6667H18.8889C19.5 11.6667 20 10.9167 20 10C20 9.08333 19.5 8.33333 18.8889 8.33333H1.11111C0.5 8.33333 0 9.08333 0 10C0 10.9167 0.5 11.6667 1.11111 11.6667ZM0 1.66667C0 2.58333 0.5 3.33333 1.11111 3.33333H18.8889C19.5 3.33333 20 2.58333 20 1.66667C20 0.75 19.5 0 18.8889 0H1.11111C0.5 0 0 0.75 0 1.66667Z"
+                                fill="black" />
+                        </svg>
 
+                    </span>
                     <span class="search_icon">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                             class="bi bi-search" viewBox="0 0 16 16">
                             <path
                                 d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
                         </svg>
-                        <input type="text" class="search_input" placeholder="Buscar">
+                        <input type="text" class="search_input" placeholder="Buscar" />
                     </span>
                     <div class="header_user_toggle">
                         <div class="icon">
@@ -80,9 +85,7 @@
                             </svg>
                         </div>
 
-                        <div class="bubble">
-                            0
-                        </div>
+                        <div class="bubble">0</div>
                     </div>
                     <!-- /header_cart_toggle -->
                 </div>
@@ -98,9 +101,7 @@
                             <div class="drawer_tittle">
                                 Carrito de la compra
                             </div>
-                            <div class="cart_lenght">
-                                Productos: 0
-                            </div>
+                            <div class="cart_lenght">Productos: 0</div>
                         </div>
 
                         <div class="drawer_close_button">
@@ -112,15 +113,18 @@
                         </div>
                     </div>
                     <div class="drawer_content_body"></div>
-                    <div class="your_cart_is_empty">Tú cesta está vacía</div>
+                    <div class="your_cart_is_empty">
+                        Tú cesta está vacía
+                    </div>
                     <div class="drawer_total_price">
                         <div class="drawer_total_price_text"></div>
                         <div class="drawer_total_price_amount"></div>
-
                     </div>
                     <div class="checkout">
                         <span class="checkout_button">
-                            <div class="button button_secondary">Ir a pagar</div>
+                            <div class="button button_secondary">
+                                Ir a pagar
+                            </div>
                         </span>
                         <span class="free_delivery_bar">
                             <div class="free_delivery_progress_bar"></div>
@@ -136,7 +140,7 @@
 
         <section class="hero">
             <div class="hero_img">
-                <img src="assets/img/frame_hero.png" alt="">
+                <img src="assets/img/frame_hero.png" alt="" />
             </div>
         </section>
         <!-- /hero -->
@@ -159,7 +163,6 @@
                                 </clipPath>
                             </defs>
                         </svg>
-
                     </div>
                     <div class="btn_text">Todos</div>
                 </button>
@@ -178,7 +181,6 @@
                                 </clipPath>
                             </defs>
                         </svg>
-
                     </div>
                     <div class="btn_text">Libros</div>
                 </button>
@@ -197,7 +199,6 @@
                                 </clipPath>
                             </defs>
                         </svg>
-
                     </div>
                     <div class="btn_text">Cuadernos</div>
                 </button>
@@ -216,7 +217,6 @@
                                 </clipPath>
                             </defs>
                         </svg>
-
                     </div>
                     <div class="btn_text">Lápices</div>
                 </button>
@@ -229,23 +229,18 @@
                                     d="M32.1001 45.5C31.2101 45.5 30.3401 45.7639 29.6 46.2584C28.86 46.7529 28.2832 47.4557 27.9426 48.2779C27.602 49.1002 27.5129 50.005 27.6866 50.8779C27.8602 51.7508 28.2888 52.5526 28.9181 53.182C29.5475 53.8113 30.3493 54.2399 31.2222 54.4135C32.0951 54.5872 32.9999 54.4981 33.8222 54.1575C34.6444 53.8169 35.3472 53.2401 35.8417 52.5001C36.3362 51.76 36.6001 50.89 36.6001 50C36.6001 48.8065 36.126 47.6619 35.2821 46.818C34.4382 45.9741 33.2936 45.5 32.1001 45.5ZM86.1001 27.5H81.6001V14C81.6001 12.8065 81.126 11.6619 80.2821 10.818C79.4382 9.97411 78.2936 9.5 77.1001 9.5H32.1001C30.9066 9.5 29.762 9.97411 28.9181 10.818C28.0742 11.6619 27.6001 12.8065 27.6001 14V27.5H23.1001C19.5197 27.5 16.0859 28.9223 13.5542 31.4541C11.0224 33.9858 9.6001 37.4196 9.6001 41V68C9.6001 71.5804 11.0224 75.0142 13.5542 77.5459C16.0859 80.0777 19.5197 81.5 23.1001 81.5H27.6001V95C27.6001 96.1935 28.0742 97.3381 28.9181 98.182C29.762 99.0259 30.9066 99.5 32.1001 99.5H77.1001C78.2936 99.5 79.4382 99.0259 80.2821 98.182C81.126 97.3381 81.6001 96.1935 81.6001 95V81.5H86.1001C89.6805 81.5 93.1143 80.0777 95.646 77.5459C98.1778 75.0142 99.6001 71.5804 99.6001 68V41C99.6001 37.4196 98.1778 33.9858 95.646 31.4541C93.1143 28.9223 89.6805 27.5 86.1001 27.5ZM36.6001 18.5H72.6001V27.5H36.6001V18.5ZM72.6001 90.5H36.6001V72.5H72.6001V90.5ZM90.6001 68C90.6001 69.1935 90.126 70.3381 89.2821 71.182C88.4382 72.0259 87.2936 72.5 86.1001 72.5H81.6001V68C81.6001 66.8065 81.126 65.6619 80.2821 64.818C79.4382 63.9741 78.2936 63.5 77.1001 63.5H32.1001C30.9066 63.5 29.762 63.9741 28.9181 64.818C28.0742 65.6619 27.6001 66.8065 27.6001 68V72.5H23.1001C21.9066 72.5 20.762 72.0259 19.9181 71.182C19.0742 70.3381 18.6001 69.1935 18.6001 68V41C18.6001 39.8065 19.0742 38.6619 19.9181 37.818C20.762 36.9741 21.9066 36.5 23.1001 36.5H86.1001C87.2936 36.5 88.4382 36.9741 89.2821 37.818C90.126 38.6619 90.6001 39.8065 90.6001 41V68Z" />
                             </g>
                         </svg>
-
                     </div>
                     <div class="btn_text">Rotuladores</div>
                 </button>
-
             </section>
         </section>
         <!-- /categories -->
 
         <main class="main">
             <section class="most_read">
-
                 <section class="filter_bar">
                     <div class="filter_bar_left">
-                        <span class="filter_tags">
-
-                        </span>
+                        <span class="filter_tags"> </span>
                     </div>
                     <!-- /filter_bar_left -->
                     <div class="filter_bar_right">
@@ -257,7 +252,7 @@
                                         <path
                                             d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
                                     </svg>
-                                    <input type="text" class="search_input" placeholder="Buscar">
+                                    <input type="text" class="search_input" placeholder="Buscar" />
                                 </span>
                             </li>
                             <li>
@@ -271,8 +266,7 @@
                                 </span>
                             </li>
                         </ul>
-                        <span class="icon">
-                        </span>
+                        <span class="icon"> </span>
                     </div>
                     <!-- /filter_bar_right -->
                 </section>
@@ -813,7 +807,6 @@
                     </div>
                     /card-->
                 </div>
-
             </section>
 
             <section class="recommendations">
