@@ -18,8 +18,9 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        gap: 1.5rem;
         width: 1180px;
+
+
 
         .header_left {
             display: flex;
@@ -29,6 +30,7 @@
             .header_logo {
                 display: flex;
                 height: 44px;
+                width: 129px;
 
 
                 img {
@@ -45,26 +47,14 @@
                 @include f_button_m_desktop;
                 color: $color_gray_700;
 
-
-
-                .menu {
-                    display: none;
-                    color: black;
-
-                    @media (width < 600px) {
-                        & {
-                            display: inline-block;
-                        }
+                @media (width < 700px) {
+                    & {
+                        display: none;
                     }
                 }
 
                 .shop {
 
-                    @media (width < 600px) {
-                        & {
-                            display: none;
-                        }
-                    }
                 }
 
                 .about_us {
@@ -72,12 +62,6 @@
 
                     &:hover {
                         color: $color_gray_700;
-                    }
-
-                    @media (width < 600px) {
-                        & {
-                            display: none;
-                        }
                     }
                 }
 
@@ -88,11 +72,6 @@
                         color: $color_gray_700;
                     }
 
-                    @media (width < 600px) {
-                        & {
-                            display: none;
-                        }
-                    }
                 }
             }
         }
@@ -104,20 +83,20 @@
 
             @media (width < 550px) {
                 & {
-                    gap: .75rem;
+                    gap: .5rem;
                 }
             }
 
             .menu_icon{
                 display: none;
-                padding: .25rem .75rem; 
-                @include button_s_style_no_border($color_gray_700, $color_primary_400);
-                cursor: pointer;
 
 
-                @media (width < 600px) {
+
+                @media (width < 700px) {
                     display: flex;
-
+                    padding: .25rem .75rem; 
+                    @include button_s_style_no_border($color_gray_700, $color_primary_400);
+                    cursor: pointer;
                 }
             }
 
@@ -141,9 +120,14 @@
 
                 }
 
+                @media (width < 920px) {
+                    display: none;
+                }
+
                 @media (width < 600px) {
                     display: none;
                 }
+
             }
 
             .header_user_toggle {
@@ -241,9 +225,9 @@
 
                 }
 
-                @media (width < 600px) {
-                    display: none;
-                }
+                // @media (width < 600px) {
+                //     display: none;
+                // }
 
             }
         }
