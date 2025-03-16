@@ -7541,6 +7541,16 @@ meter {
   align-items: center;
   gap: 1.75rem;
 }
+@media (width < 670px) {
+  .main .most_read .filter_bar .filter_bar_right ul {
+    gap: 0.75rem;
+  }
+}
+@media (width < 430px) {
+  .main .most_read .filter_bar .filter_bar_right ul {
+    gap: 0.5rem;
+  }
+}
 .main .most_read .filter_bar .filter_bar_right ul li .search_icon {
   display: flex;
   gap: 0.75rem;
@@ -7603,7 +7613,7 @@ meter {
   width: 100%;
   position: relative;
 }
-.card .fav_button {
+.card .fav_button_img {
   display: none;
   position: absolute;
   top: 0.75rem;
@@ -7611,18 +7621,18 @@ meter {
   transition: 0.3s ease-in;
 }
 @media (width < 670px) {
-  .card .fav_button {
+  .card .fav_button_img {
     display: flex;
   }
 }
 @media (width < 440px) {
-  .card .fav_button {
+  .card .fav_button_img {
     position: absolute;
     top: 0.5rem;
     left: 0.5rem;
   }
 }
-.card .fav_button svg:hover {
+.card .fav_button_img svg:hover {
   color: #2227F7;
   scale: 1.1;
 }
@@ -8084,23 +8094,25 @@ meter {
   -webkit-overflow-scrolling: touch;
   gap: 1.75rem;
   padding: 1rem;
+  margin-top: 2rem;
 }
 .categories .categories_nav .category_btn {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-width: 124px;
-  gap: 0.5rem;
-  padding: 0.75rem 0.75rem;
-  border-radius: 8px;
-  background-color: #bcc3c9;
-  color: #697089;
+  padding: 0.75rem 1rem;
   cursor: pointer;
+  background-color: #C1C1C1;
+  border-radius: 20px;
+  box-shadow: 0 4px 0 black;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
   z-index: 0;
 }
 .categories .categories_nav .category_btn .btn_img {
-  width: 3rem;
+  width: 2rem;
 }
 .categories .categories_nav .category_btn .btn_img svg {
   display: flex;
@@ -8110,38 +8122,39 @@ meter {
      object-fit: fill;
   -o-object-position: center;
      object-position: center;
-  fill: #697089;
+  color: #4E4E4E;
 }
 .categories .categories_nav .category_btn .btn_text {
-  color: hsla(227, 13%, 47%, 0.3);
-  max-width: 95px;
-  text-align: center;
-  font-family: Nohemi;
-  font-size: 1rem;
-  font-style: normal;
-  font-weight: 700;
+  color: #4E4E4E;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
 }
-.categories .categories_nav .category_btn.category_btn:hover {
-  color: #0C0E19;
+.categories .categories_nav .category_btn:hover {
+  color: #050505;
   background-color: #fff;
   box-shadow: inset 0 0 0 4px #FFC222;
 }
-.categories .categories_nav .category_btn.category_btn:hover .btn_img svg {
-  fill: #0C0E19;
+.categories .categories_nav .category_btn:hover .btn_img svg {
+  color: #050505;
 }
-.categories .categories_nav .category_btn.category_btn:hover .btn_text {
-  color: #0C0E19;
+.categories .categories_nav .category_btn:hover .btn_text {
+  color: #050505;
 }
 .categories .categories_nav .category_btn.opened {
-  color: #0C0E19;
+  color: #050505;
   background-color: #fff;
   box-shadow: inset 0 0 0 4px #FFC222;
 }
-.categories .categories_nav .category_btn.opened .btn_img svg {
-  fill: #0C0E19;
+.categories .categories_nav .category_btn.opened .btn_img svg path {
+  fill: #050505;
+}
+.categories .categories_nav .category_btn.opened .btn_img svg path#cuadernos {
+  fill: none;
+  stroke: #050505;
 }
 .categories .categories_nav .category_btn.opened .btn_text {
-  color: #0C0E19;
+  color: #050505;
 }
 
 :root {

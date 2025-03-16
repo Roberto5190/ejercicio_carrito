@@ -65,7 +65,12 @@
                     justify-content: space-between;
                     align-items: center;
                     gap: 1.75rem;
-
+                    @media (width < 670px) {
+                        gap: .75rem;
+                    }
+                    @media (width < 430px) {
+                        gap: .5rem;
+                    }
                     li {
                         .search_icon {
                             display: flex;
@@ -148,8 +153,8 @@
     max-width: 100%;
     width: 100%;
     position: relative;
-    
-    .fav_button {
+
+    .fav_button_img {
         display: none;
         position: absolute;
         top: .75rem;

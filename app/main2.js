@@ -152,7 +152,7 @@ const renderCards = (filteredProducts) => {
         cardProduct.classList.add("cardContainer");
         cardProduct.innerHTML += `
         <div class="card" data-sale="${card.dataSale}" data-identifier="${card.dataIdentifier}">
-            <button class="button button_primary fav_button">
+            <button class="button button_primary fav_button_img">
                 <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26"
                     viewBox="0 0 256 256">
                     <path fill="currentColor"
