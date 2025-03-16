@@ -7480,6 +7480,7 @@ meter {
   background-color: #5283E0;
   margin-bottom: -2rem;
   position: sticky;
+  position: -webkit-sticky;
   top: 0;
   z-index: 0;
   width: 100%;
