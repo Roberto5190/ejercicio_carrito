@@ -412,6 +412,7 @@ const initCardsEvents = () => {
         });
     });
 
+    // CARDPICTURE DETALLES DEL PRODUCTO
     cardPictureDetails.forEach((product, index) => {
 
         product.addEventListener("click", (ev) => {

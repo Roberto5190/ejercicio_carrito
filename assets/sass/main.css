@@ -7608,6 +7608,7 @@ meter {
   height: 100%;
   border-radius: 12px 12px 0px 0px;
   padding: 1rem 1rem;
+  overflow: hidden;
 }
 @media (width < 670px) {
   .card .card_picture {
