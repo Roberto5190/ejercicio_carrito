@@ -7049,6 +7049,7 @@ meter {
     color: #050505;
     background-color: #FFC222;
     border-radius: 8px;
+    cursor: pointer;
     display: flex;
     padding: 8px 12px;
     font-family: "Roboto", sans-serif;
@@ -7093,6 +7094,7 @@ meter {
   color: #050505;
   background-color: #FFC222;
   border-radius: 8px;
+  cursor: pointer;
   display: flex;
   padding: 8px 12px;
   font-family: "Roboto", sans-serif;
@@ -7133,6 +7135,7 @@ meter {
   color: #050505;
   background-color: #FFC222;
   border-radius: 8px;
+  cursor: pointer;
   display: flex;
   padding: 8px 12px;
   font-family: "Roboto", sans-serif;
@@ -7152,6 +7155,7 @@ meter {
   color: #050505;
   background-color: #FFC222;
   border-radius: 8px;
+  cursor: pointer;
   display: flex;
   padding: 8px 12px;
   font-family: "Roboto", sans-serif;
@@ -7473,18 +7477,91 @@ meter {
 
 .hero {
   padding-top: 3rem;
-  background-color: #fff;
+  background-color: #5283E0;
   margin-bottom: -2rem;
   position: sticky;
   top: 0;
   z-index: 0;
-}
-.hero .hero_img {
+  width: 100%;
+  height: 500px;
   display: flex;
-  max-width: 1180px;
-  margin: 0 auto;
+  justify-content: center;
 }
-.hero .hero_img img {
+.hero .hero_center {
+  margin-top: 9rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  width: 1180px;
+}
+.hero .hero_center .hero_text .hero_top_text {
+  font-family: "Nohemi", sans-serif;
+  font-size: 128px;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.hero .hero_center .hero_text .hero_bottom_text {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+}
+.hero .hero_center .hero_text .hero_bottom_text .hero_text_cta .hero_p_cta {
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  font-weight: normal;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+.hero .hero_center .hero_text .hero_bottom_text .hero_text_cta .hero_buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.hero .hero_center .hero_text .hero_bottom_text .hero_text_cta .hero_buttons .hero_cta_left {
+  text-align: center;
+  color: #050505;
+  background-color: white;
+  border: 2px solid #0C0E19;
+  border-radius: 8px;
+  box-shadow: 0 4px 0 black;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 0.5rem 1rem;
+}
+.hero .hero_center .hero_text .hero_bottom_text .hero_text_cta .hero_buttons .hero_cta_right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  color: #050505;
+  background-color: #FFC222;
+  border: 2px solid #0C0E19;
+  border-radius: 8px;
+  box-shadow: 0 4px 0 black;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+.hero .hero_center .hero_text .hero_bottom_text .hero_text_irasi {
+  font-family: "Nohemi", sans-serif;
+  font-size: 128px;
+  font-weight: bold;
+}
+.hero .hero_center .hero_img {
+  display: flex;
+  height: 440px;
+}
+@media (width < 1130px) {
+  .hero .hero_center .hero_img {
+    height: 350px;
+  }
+}
+.hero .hero_center .hero_img img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -7583,6 +7660,7 @@ meter {
   color: #050505;
   background-color: #EAEAEA;
   border-radius: 8px;
+  cursor: pointer;
   display: flex;
   padding: 8px 12px;
   font-family: "Roboto", sans-serif;
@@ -7774,6 +7852,7 @@ meter {
   color: #050505;
   background-color: #EAEAEA;
   border-radius: 8px;
+  cursor: pointer;
   display: flex;
   padding: 8px 12px;
   font-family: "Roboto", sans-serif;
@@ -7803,6 +7882,7 @@ meter {
   border: 2px solid #0C0E19;
   border-radius: 8px;
   box-shadow: 0 4px 0 black;
+  cursor: pointer;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -7981,6 +8061,7 @@ meter {
   border: 2px solid #0C0E19;
   border-radius: 8px;
   box-shadow: 0 4px 0 black;
+  cursor: pointer;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 400;

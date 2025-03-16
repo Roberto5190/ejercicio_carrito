@@ -198,6 +198,7 @@
     border: 2px solid $color_dark;
     border-radius: $button_radius_s;
     box-shadow: $border_button;
+    cursor: pointer;
 
     @include f_button_s_desktop;
 }
@@ -207,7 +208,7 @@
     background-color: $bcolor;
     border: 2px solid $color_dark;
     border-radius: $button_radius_s;
-
+    cursor: pointer;
 
     @include f_button_s_desktop;
 }
@@ -216,6 +217,7 @@
     color: $color;
     background-color: $bcolor;
     border-radius: $button_radius_s;
+    cursor: pointer;
 
     display: flex;
     padding: 8px 12px;
@@ -229,6 +231,7 @@
     border: 2px solid $color_dark;
     border-radius: $button_radius_m;
     box-shadow: $border_button;
+    cursor: pointer;
 
     @include f_button_m_desktop;
 }
@@ -239,6 +242,7 @@
     border: 2px solid $color_dark;
     border-radius: $button_radius_l;
     box-shadow: $border_button;
+    cursor: pointer;
 
     @include f_button_l_desktop;
 }
