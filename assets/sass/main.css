@@ -8145,6 +8145,7 @@ meter {
 }
 @media (width < 440px) {
   .main_content .main_content_center .categories .categories_nav {
+    gap: 0.75rem;
     margin-bottom: 0.75rem;
   }
 }
