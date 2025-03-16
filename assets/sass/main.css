@@ -7601,6 +7601,30 @@ meter {
   font-family: "Roboto";
   max-width: 100%;
   width: 100%;
+  position: relative;
+}
+.card .fav_button {
+  display: none;
+  position: absolute;
+  top: 0.75rem;
+  left: 0.75rem;
+  transition: 0.3s ease-in;
+}
+@media (width < 670px) {
+  .card .fav_button {
+    display: flex;
+  }
+}
+@media (width < 440px) {
+  .card .fav_button {
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+  }
+}
+.card .fav_button svg:hover {
+  color: #2227F7;
+  scale: 1.1;
 }
 .card .card_picture {
   aspect-ratio: 1/1;
@@ -7614,14 +7638,12 @@ meter {
   .card .card_picture {
     padding: 0.5rem 0.5rem;
     width: 100%;
-    position: relative;
   }
 }
 @media (width < 400px) {
   .card .card_picture {
     padding: 0.5rem 0.5rem;
     width: 100%;
-    position: relative;
   }
 }
 .card .card_picture img {
@@ -7631,29 +7653,6 @@ meter {
      object-fit: contain;
   -o-object-position: center;
      object-position: center;
-}
-.card .card_picture .fav_button {
-  display: none;
-  position: absolute;
-  top: 0.75rem;
-  left: 0.75rem;
-  transition: 0.3s ease-in;
-}
-@media (width < 670px) {
-  .card .card_picture .fav_button {
-    display: flex;
-  }
-}
-@media (width < 440px) {
-  .card .card_picture .fav_button {
-    position: absolute;
-    top: 0.5rem;
-    left: 0.5rem;
-  }
-}
-.card .card_picture .fav_button svg:hover {
-  color: #2227F7;
-  scale: 1.1;
 }
 .card .card_content {
   display: flex;

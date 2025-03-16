@@ -147,7 +147,31 @@
     font-family: 'Roboto';
     max-width: 100%;
     width: 100%;
+    position: relative;
+    
+    .fav_button {
+        display: none;
+        position: absolute;
+        top: .75rem;
+        left: .75rem;
+        transition: .3s ease-in;
 
+        @media (width < 670px) {
+            display: flex;
+        }
+        @media (width < 440px) {
+            position: absolute;
+            top: .5rem;
+            left: .5rem;
+        }
+
+        svg {}
+
+        & svg:hover {
+            color: $color_secondary_400;
+            scale: 1.1;
+        }
+    }
 
 
     .card_picture {
@@ -162,15 +186,11 @@
 
         @media (width < 670px) {
             padding: .5rem .5rem;
-            // min-height: 128px;
-            // max-height: 150px;
             width: 100%;
-            position: relative;
         }
         @media (width < 400px) {
             padding: .5rem .5rem;
             width: 100%;
-            position: relative;
         }
 
         img {
@@ -180,29 +200,7 @@
             object-position: center;
         }
 
-        .fav_button {
-            display: none;
-            position: absolute;
-            top: .75rem;
-            left: .75rem;
-            transition: .3s ease-in;
 
-            @media (width < 670px) {
-                display: flex;
-            }
-            @media (width < 440px) {
-                position: absolute;
-                top: .5rem;
-                left: .5rem;
-            }
-
-            svg {}
-
-            & svg:hover {
-                color: $color_secondary_400;
-                scale: 1.1;
-            }
-        }
     }
 
     .card_content {
