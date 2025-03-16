@@ -1,6 +1,10 @@
 .hero {
     padding-top: 3rem;
     background-color: #fff;
+    margin-bottom: -2rem;
+    position: sticky;
+    top: 0;
+    z-index: 0;
     .hero_img{
         display: flex;
         max-width: 1180px;

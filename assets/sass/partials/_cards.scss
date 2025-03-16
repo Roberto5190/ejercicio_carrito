@@ -4,6 +4,9 @@
     margin: 0 auto;
     padding: 1rem;
     color: white;
+    background-color: $color_gray_700;
+    position: relative;
+    z-index: 100;
 
 
     .most_read {
