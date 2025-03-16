@@ -13,15 +13,17 @@
 
     .main_content_center{
         width: 1180px;
+        padding-left: 1.5rem;
         @media (width < 770px) {
             max-width: 100%;
+            padding-left: 1rem;
         }
         margin: 0 auto;
         
         .categories {
             // margin: 0 auto;
             max-width: 1180px;
-            z-index: -1;
+
         
             h3 {
                 @include h1_desktop;
@@ -57,7 +59,9 @@
                 scroll-snap-type: x mandatory;
                 scroll-behavior: smooth;
                 -webkit-overflow-scrolling: touch;
-        
+
+                position: relative;
+                z-index: 500;
                 gap: 1.75rem;
                 padding: 1rem;
                 
