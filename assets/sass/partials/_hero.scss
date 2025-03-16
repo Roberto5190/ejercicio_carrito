@@ -11,6 +11,20 @@
     display: flex;
     justify-content: center;
 
+    @media (width < 1130px) {
+        height: 450px;
+    }
+
+    @media (width < 800px) {
+        height: 350px;
+    }
+    @media (width < 600px) {
+        height: 250px;
+    }
+    @media (width < 470px) {
+        height: 200px;
+    }
+
 
     .hero_center{
         margin-top: 9rem;
@@ -19,34 +33,130 @@
         align-items: center;
         gap: 2rem;
         width: 1180px;
+        @media (width < 1130px) {
+            margin-top: 10rem;
+        }
+        @media (width < 800px) {
+            margin-top: 5rem;
+        }
+        @media (width < 600px) {
+            margin-top: 7rem;
+            gap: 1rem;
+        }
+        @media (width < 600px) {
+            margin-top: 1.5rem;
+            gap: 1rem;
+        }
 
         .hero_text{
+            text-align: right;
             .hero_top_text{
                 font-family: 'Nohemi', sans-serif;
                 font-size: 128px;
                 font-weight: bold;
                 margin-bottom: 1rem;
+
+                @media (width < 1130px) {
+                    font-size: 90px;
+                }
+
+                @media (width < 800px) {
+                    font-size: 60px;
+                    margin-bottom: .75rem;
+                }
+                @media (width < 600px) {
+                    font-size: 50px;
+                    margin-bottom: -.5rem;
+                }
+                @media (width < 470px) {
+                    font-size: 34px;
+                }
             }
+
             .hero_bottom_text{
                 display: flex;
                 justify-content: space-between;
                 margin-top: .5rem;
                 .hero_text_cta{
-                    
+                    text-align: left;
+
                     .hero_p_cta{
                         @include subtitle1_desktop;
                         color: #ffffff;
                         margin-bottom: 1rem;
+
+                        @media (width < 1130px) {
+                            @include subtitle2_desktop;
+                            margin-bottom: .5rem;
+                        }
+
+                        @media (width < 800px) {
+                            @include body1_mobile;
+                            margin-bottom: .25rem;
+                            margin-top: -.75rem;
+                        }
+
+                        @media (width < 600px) {
+                            text-align: center;
+                            font-family: 'Roboto', sans-serif;
+                            font-size: 18px;
+                            font-weight: normal;
+
+                            width: 140px;
+                            margin-top: auto;
+                            .ideas{
+                                font-weight: bold;
+                                color: $color_secondary_600;
+                            }
+                            
+                        }
+                        @media (width < 470px) {
+                            text-align: center;
+                            font-family: 'Roboto', sans-serif;
+                            font-size: 12px;
+                            font-weight: normal;
+
+                            width: 100px;
+                            margin-top: auto;
+                            .ideas{
+                                font-weight: bold;
+                                color: $color_secondary_600;
+                            }
+                            
+                        }
                     }
 
                     .hero_buttons{
                         display: flex;
                         justify-content: space-between;
                         gap: 1rem;
+
+                        @media (width < 1130px) {
+                            gap: .5rem;
+                        }
                         .hero_cta_left{
                             text-align: center;
-                            @include button_s_style_border($color_gray_700, white);
+                            color: $color_gray_700;
+                            background-color: white;
+                            border: 2px solid $color_dark;
+                            border-radius: $button_radius_s;
+                            box-shadow: $border_button;
                             padding: .5rem 1rem;
+                            cursor: pointer;
+                        
+                            @include f_button_s_desktop;
+
+                            
+
+                            @media (width < 1130px) {
+                                @include caption_mobile;
+                                padding: .25rem .75rem;
+                            }
+                            @media (width < 800px) {
+                                display: none;
+                            }
+
+
                         }
 
                         .hero_cta_right{
@@ -56,8 +166,28 @@
                             gap: .5rem;
                             padding: .5rem 1rem;
 
-                            @include button_s_style_border($color_gray_700, $color_primary_400);
+                            color: $color_gray_700;
+                            background-color: $color_primary_400;
+                            border: 2px solid $color_dark;
+                            border-radius: $button_radius_s;
+                            box-shadow: $border_button;
+                            @include f_button_s_desktop;
+
+                            cursor: pointer;
+
+                            @media (width < 1130px) {
+                                @include caption_mobile;
+                                padding: .25rem .75rem;
+                            }
                             
+                            @media (width < 800px) {
+                                @include caption_mobile;
+                                padding: .2rem .75rem;
+                                width: 100%;
+                            }
+                            @media (width < 600px) {
+                                display: none;
+                            }
                         }
                     }
                 }
@@ -65,6 +195,21 @@
                     font-family: 'Nohemi', sans-serif;
                     font-size: 128px;
                     font-weight: bold;
+
+                    @media (width < 1130px) {
+                        font-size: 90px;
+                    }
+
+                    @media (width < 800px) {
+                        font-size: 60px;
+                    }
+                    
+                    @media (width < 600px) {
+                        font-size: 50px;
+                    }
+                    @media (width < 470px) {
+                        font-size: 34px;
+                    }
                 }
             } // /hero_bottom_text
         }
@@ -73,8 +218,24 @@
         .hero_img{
             display: flex;
             height: 440px;
+
             @media (width < 1130px) {
-                height: 350px;
+                height: 300px;
+                margin-top: 1rem;
+            }
+                                
+            @media (width < 800px) {
+                height: 250px;
+                margin-top: 1.5rem;
+            }
+            @media (width < 600px) {
+                height: 170px;
+                margin-top: 1.5rem;
+            }
+
+            @media (width < 470px) {
+                height: 100px;
+                margin-top: .75rem;
             }
             img{
                 width: 100%;
