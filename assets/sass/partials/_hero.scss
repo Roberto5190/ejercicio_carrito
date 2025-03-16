@@ -33,7 +33,9 @@
         justify-content: center;
         align-items: center;
         gap: 2rem;
-        width: 1180px;
+        width: 100%;        // Permite que el contenedor sea fluido
+        max-width: 1180px;   // Limita el ancho máximo en pantallas grandes
+
         @media (width < 1130px) {
             margin-top: 10rem;
         }
@@ -216,35 +218,36 @@
         }
         // /hero_center
 
-        .hero_img{
+        .hero_img {
             display: flex;
             height: 440px;
-
-            @media (width < 1130px) {
+        
+            @media (max-width: 1130px) {
                 height: 300px;
                 margin-top: 1rem;
             }
-                                
-            @media (width < 800px) {
+            
+            @media (max-width: 800px) {
                 height: 250px;
                 margin-top: 1.5rem;
             }
-            @media (width < 600px) {
+            @media (max-width: 600px) {
                 height: 170px;
                 margin-top: 1.5rem;
             }
-
-            @media (width < 470px) {
+            @media (max-width: 470px) {
                 height: 100px;
                 margin-top: .75rem;
             }
-            img{
+            img {
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
-                object-position: center;
+                object-position: top center;
+
             }
         }
+        
     }
 
 }
