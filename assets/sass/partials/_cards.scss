@@ -345,6 +345,11 @@
                     margin-top: 0.2rem;
                 }
 
+                &:hover {
+                    background-color: $color_secondary_600;
+                    color: white;
+    
+                }
                 @media (width < 440px) {
                     @include f_button_s_mobile;
                     gap: .25rem;
@@ -352,11 +357,7 @@
                 }
             }
 
-            :hover.button_secondary {
-                background-color: $color_secondary_400;
-                color: white;
 
-            }
         }
 
 

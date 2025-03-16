@@ -8086,6 +8086,10 @@ meter {
 .card .card_content .card_content_button .button_secondary .card_button_secondary_icon {
   margin-top: 0.2rem;
 }
+.card .card_content .card_content_button .button_secondary:hover {
+  background-color: #020444;
+  color: white;
+}
 @media (width < 440px) {
   .card .card_content .card_content_button .button_secondary {
     font-family: "Roboto", sans-serif;
@@ -8094,10 +8098,6 @@ meter {
     gap: 0.25rem;
     width: 100%;
   }
-}
-.card .card_content .card_content_button :hover.button_secondary {
-  background-color: #2227F7;
-  color: white;
 }
 
 .recommendations {
