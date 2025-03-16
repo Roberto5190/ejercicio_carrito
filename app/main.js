@@ -92,6 +92,8 @@ const initModalWindows = () => {
         const sale = card.dataset.sale
         const pictureSrc = card.querySelector(".card_picture img").src
 
+        console.log(cardPicture);
+        
         detailsButton.addEventListener("click", (ev) => {
             modalWindos.dataset.identifier = id
             modalWindos.querySelector(".title").innerText = title
@@ -115,6 +117,8 @@ const initModalWindows = () => {
             }
 
         })
+
+
     }
 
     const modalWindowsCloseIcon = modalWindos.querySelector(".close_icon")

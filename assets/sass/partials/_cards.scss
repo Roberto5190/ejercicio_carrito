@@ -73,7 +73,6 @@
                             border-radius: $button_radius_s;
                             background-color: $color_gray_200;
                             padding: .5rem .75rem;
-
                             cursor: pointer;
 
                             svg {
@@ -83,8 +82,14 @@
                             .search_input{
                                 
                                 color: $color_gray_400;
+                                
+                                @media (width < 600px) {
+                                    width: 70px;
+                                }
 
                             }
+
+
                         }
                     }
 

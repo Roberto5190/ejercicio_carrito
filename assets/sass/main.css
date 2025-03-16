@@ -7556,6 +7556,11 @@ meter {
 .main .most_read .filter_bar .filter_bar_right ul li .search_icon .search_input {
   color: #828282;
 }
+@media (width < 600px) {
+  .main .most_read .filter_bar .filter_bar_right ul li .search_icon .search_input {
+    width: 70px;
+  }
+}
 .main .most_read .filter_bar .filter_bar_right ul li .filter_icon {
   color: #050505;
   background-color: #EAEAEA;

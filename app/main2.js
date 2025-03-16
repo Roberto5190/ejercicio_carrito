@@ -368,6 +368,7 @@ const initCardsEvents = () => {
     updateTotalQuantity();
     const cardButtonAddCart = document.querySelectorAll(".button_add_card");
     const cardDetails = document.querySelectorAll(".button_details_card");
+    const cardPictureDetails = document.querySelectorAll(".card_picture");
     // BOTÓN AÑADIR AL CARRITO
     cardButtonAddCart.forEach((product, index) => {
         product.addEventListener("click", (ev) => {
@@ -397,6 +398,21 @@ const initCardsEvents = () => {
 
     // BOTÓN DETALLES DEL PRODUCTO
     cardDetails.forEach((product, index) => {
+
+        product.addEventListener("click", (ev) => {
+            const selectedProduct = selectedCategoryProducts[index];
+            const productIndex = selectedCategoryProducts.findIndex(item => item.dataIdentifier === selectedProduct.dataIdentifier);
+            if (productIndex !== -1) {
+
+                renderModalWindows(selectedProduct)
+                initModalWindows()
+                initModalWindowsEvents()
+
+            }
+        });
+    });
+
+    cardPictureDetails.forEach((product, index) => {
 
         product.addEventListener("click", (ev) => {
             const selectedProduct = selectedCategoryProducts[index];
@@ -515,6 +531,8 @@ const initModalWindowsEvents = () => {
                     modalWindows.classList.remove("opened")
                 }
             });
+
+
         });
 
 
