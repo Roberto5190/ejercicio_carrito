@@ -1,7 +1,7 @@
 .modal_windows {
     display: flex;
     flex-wrap: wrap;
-    min-width: clamp(320px, 70vw, 700px); //ancho máximo que varía entre 320px y 740px, dependiendo del ancho de la ventana gráfica (viewport) 
+    max-width: clamp(320px, 100vw, 600px); //ancho máximo que varía entre 320px y 740px, dependiendo del ancho de la ventana gráfica (viewport) 
     max-height: 90%;
     min-height: 280px;
     visibility: hidden;
@@ -40,6 +40,7 @@
 
     .modal_window_body {
         width: 100%;
+
         .modal_windows_body_content {
             display: flex;
             flex-wrap: wrap;
@@ -67,7 +68,7 @@
                 flex-direction: column;
                 justify-content: space-between;
                 gap: 1.5rem;
-                
+
 
                 .modal_window_content_text {
                     .modal_window_content_top {
@@ -89,24 +90,29 @@
                                 color: $color_light;
                             }
                         }
+
                         .modal_window_content_prices {
                             display: flex;
                             flex-direction: column;
                             align-items: flex-end;
+
                             .offer_amount {
                                 display: none;
                                 font-family: 'Nohemi';
                                 font-weight: 900;
                                 font-size: medium;
-                                &.opened{
+
+                                &.opened {
                                     display: block;
                                 }
                             }
+
                             .price {
                                 font-family: 'Nohemi';
                                 font-weight: 900;
                                 font-size: medium;
-                                &.offer_visible{
+
+                                &.offer_visible {
                                     font-family: 'Roboto';
                                     text-decoration: line-through;
                                     font-weight: 400;
@@ -114,7 +120,7 @@
                                     color: $color_light;
                                 }
                             }
-                            
+
                         }
 
                     }
@@ -140,7 +146,7 @@
                         box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.1);
                         align-items: center;
 
-                        
+
 
                         .offer_text {}
 
@@ -162,10 +168,7 @@
                     .button {
                         display: flex;
                         flex-wrap: nowrap;
-                        border: 2px solid $color_secondary_400;
-                        border-radius: 8px;
-                        // background-color: $color_secondary; 
-                        color: $color_secondary_400;
+
                         padding: .5rem 1.25rem;
                         cursor: pointer;
 
@@ -173,6 +176,7 @@
                             transition: background-color 0.3s ease-in, color 0.3s ease;
 
                             &.button_secondary {
+                                @include button_s_style_border($color_gray_100, $color_secondary_400);
                                 gap: .75rem;
                                 display: flex;
 
@@ -189,7 +193,7 @@
                         }
 
                         &:hover.button_add_card {
-                            background-color: $color_secondary_400;
+                            background-color: $color_gray_700;
                             color: white;
 
                         }
@@ -205,8 +209,8 @@
 
                         .counter_buttons_plus {
                             border: none;
-                            color: $color_light;
-                            border: 2px solid $color_light;
+                            color: $color_gray_700;
+                            border: 2px solid $color_gray_700;
                             border-radius: 4px;
                             width: 1rem;
                             display: flex;
@@ -226,8 +230,8 @@
 
                         .counter_buttons_minus {
                             border: none;
-                            color: $color_light;
-                            border: 2px solid $color_light;
+                            color: $color_gray_700;
+                            border: 2px solid $color_gray_700;
                             border-radius: 4px;
                             width: 1rem;
                             display: flex;
@@ -248,20 +252,20 @@
 
                     .counter {
                         position: absolute;
-                        left: 79px;
+                        left: 80px;
                         bottom: 32px;
                         width: auto;
                         height: auto;
 
+
                         .counter_number {
-                            // display: none;
-                            border: 2px solid $color_secondary_400;
                             background-color: white;
                             border-radius: 9999px;
                             font-weight: bold;
                             font-size: x-small;
-                            color: $color_secondary_400;
+                            color: $color_gray_700;
                             padding: 1.75px 5.5px;
+                            border: 2px solid $color_gray_700;
 
                             &.opened {
                                 display: block;
@@ -274,7 +278,7 @@
                         .button {
                             margin-left: 1rem;
                             border: none;
-                            color: $color_secondary_400;
+                            color: $color_gray_700;
                             background-color: $color_primary_400;
                             border-radius: 16px;
                             padding: .6rem .75rem;

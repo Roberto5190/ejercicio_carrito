@@ -137,6 +137,7 @@ window.addEventListener("load", (ev) => {
     initCardsEvents();
 });
 
+// #region CARDS
 // CARDS
 /**
  * Renderiza los productos que pasamos por el parametro en la galeria de cards con HTML dinámico
@@ -151,8 +152,16 @@ const renderCards = (filteredProducts) => {
         cardProduct.classList.add("cardContainer");
         cardProduct.innerHTML += `
         <div class="card" data-sale="${card.dataSale}" data-identifier="${card.dataIdentifier}">
+            <button class="button button_primary fav_button_img">
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26"
+                    viewBox="0 0 256 256">
+                    <path fill="currentColor"
+                        d="M178 28c-20.09 0-37.92 7.93-50 21.56C115.92 35.93 98.09 28 78 28a66.08 66.08 0 0 0-66 66c0 72.34 105.81 130.14 110.31 132.57a12 12 0 0 0 11.38 0C138.19 224.14 244 166.34 244 94a66.08 66.08 0 0 0-66-66Zm-5.49 142.36a328.69 328.69 0 0 1-44.51 31.8a328.69 328.69 0 0 1-44.51-31.8C61.82 151.77 36 123.42 36 94a42 42 0 0 1 42-42c17.8 0 32.7 9.4 38.89 24.54a12 12 0 0 0 22.22 0C145.3 61.4 160.2 52 178 52a42 42 0 0 1 42 42c0 29.42-25.82 57.77-47.49 76.36Z" />
+                </svg>
+            </button>
             <div class="card_picture">
                 <img src="${card.itemImg}" alt="">
+
             </div>
             <div class="card_content">
                 <div class="card_content_top">
@@ -203,7 +212,9 @@ const renderCards = (filteredProducts) => {
     })
 
 }
+// #endregion
 
+// #region CATEGORIES
 // CATEGORIES
 
 // initCategories
@@ -358,6 +369,7 @@ const initCardsEvents = () => {
     updateTotalQuantity();
     const cardButtonAddCart = document.querySelectorAll(".button_add_card");
     const cardDetails = document.querySelectorAll(".button_details_card");
+    const cardPictureDetails = document.querySelectorAll(".card_picture");
     // BOTÓN AÑADIR AL CARRITO
     cardButtonAddCart.forEach((product, index) => {
         product.addEventListener("click", (ev) => {
@@ -401,11 +413,27 @@ const initCardsEvents = () => {
         });
     });
 
+    // CARDPICTURE DETALLES DEL PRODUCTO
+    cardPictureDetails.forEach((product, index) => {
+
+        product.addEventListener("click", (ev) => {
+            const selectedProduct = selectedCategoryProducts[index];
+            const productIndex = selectedCategoryProducts.findIndex(item => item.dataIdentifier === selectedProduct.dataIdentifier);
+            if (productIndex !== -1) {
+
+                renderModalWindows(selectedProduct)
+                initModalWindows()
+                initModalWindowsEvents()
+
+            }
+        });
+    });
+
 };
 
 
 
-
+// #region MODALWINDOWS
 // MODALWINDOWS
 /**
  * initModalWindows
@@ -505,6 +533,8 @@ const initModalWindowsEvents = () => {
                     modalWindows.classList.remove("opened")
                 }
             });
+
+
         });
 
 
